@@ -1,0 +1,28 @@
+.link {
+    text-decoration: none;
+    color: #FB0EB0;
+}
+
+h1 {
+    font-size: 300%;
+    text-align: center;
+}
+
+p {
+    font-size: 200%;
+}
+
+#body-div {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(138, 87, 175);
+    border-radius: 8px;
+    background-color: rgb(136, 87, 179);
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+
+

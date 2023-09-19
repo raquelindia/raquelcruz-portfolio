@@ -1,0 +1,15 @@
+#parent-1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+
+#about-pic {
+    width: 70%;
+    margin-right: -10%;
+    
+}
+
