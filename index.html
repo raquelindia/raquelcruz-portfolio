@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <title>Raquel Cruz | Software Engineer</title>
-    <link rel="stylesheet" href="portfolio-styles.css">
+    <link rel="stylesheet" href="css/portfolio-styles.css">
+    
 
 </head>
 
@@ -18,7 +19,7 @@
     <!--HomePage-->
     <div id="home-parent"ng-if="state === 'home'">
         <div id="home-child-left">
-        <div class="home" ng-include="'nav.html'"></div>
+        <div ng-include="'nav.html'"></div>
         </div>
         <div id="home-child-right">
     <div ng-if="state === 'home'" ng-include="'homeTemplate.html'"></div>
@@ -26,13 +27,36 @@
     </div>
 
     <!--Contact Page-->
-    <div ng-if="state === 'contact'" ng-include="'contactTemplate.html'"></div>
+    
+    <div id="contact-parent" ng-if="state === 'contact'">
+        <div id="contact-child-right">
+            <div ng-include="'nav.html'"></div>
+        </div>
+        <div id="contact-child-left">
+        <div ng-if="state === 'contact'" ng-include="'contactTemplate.html'"></div>
+        </div>
+    </div>
 
     <!--About page-->
-    <div ng-if="state === 'about'" ng-include="'aboutTemplate.html'"></div>
+    <div id="about-parent" ng-if="state === 'about'">
+        <div id="about-child-left">
+            <div ng-include="'nav.html'"></div>
+        </div>
+        <div id="about-child-right">
+            <div ng-if="state === 'about'" ng-include="'aboutTemplate.html'"></div>
+        </div>
+
+    </div>
 
     <!--Projects page-->
-   <div ng-if="state === 'projects'" ng-include="'projectsTemplate.html'"></div>
+  <div id="projects-parent" ng-if="state === 'projects'">
+    <div id="projects-child-left">
+        <div ng-include="'nav.html'"></div>
+    </div>
+    <div id="projects-child-right">
+        <div ng-if="state === 'projects'" ng-include="'projectsTemplate.html'"></div>
+    </div>
+  </div>
  
 
 </div>
