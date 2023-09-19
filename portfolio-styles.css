@@ -1,19 +1,27 @@
 /*consistent things*/
-* {
-    outline: solid 1px red;
-}
 
 .ul-nav {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 .nav-button {
     background: none;
     color: white;
     border: none;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: large;
 }
 
 /*Home Page*/
 /* Fonts, colors etc. */
+#home-parent {
+    display: flex;
+    
+}
+
 .json-key {
     color: rgb(251, 14, 176);
 }
@@ -24,12 +32,14 @@ body {
     background-color: rgb(43, 4, 77); 
     color: white;
     font-family: 'Ubuntu Mono', monospace;
+    margin-top: 5%;
     
 }
 
 #selfie {
-    height: 20%;
+    height: 60%;
     border-radius: 8px;
+    width: 80%;
 }
 
 #contact-button {
@@ -48,8 +58,9 @@ body {
 /* flex box */
 #level-one-parent {
 display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
+justify-content: space-around;
+margin-left: 5%;
+margin-right: 5%;
 
 
 
@@ -63,10 +74,43 @@ flex-wrap: wrap;
 
 #level-one-child-left {
     flex-wrap: wrap;
-    margin-right: -70%;
+    width: 50%;
+   
     
 }
 
+.level-two-parent {
+    display: flex;
+   
+
+}
+.level-two-child-left {
+    margin-right: -5%;
+}
 
 
-/*keep star animation down here*/
+/*About page*/
+
+#parent-1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+
+#about-pic {
+    width: 70%;
+    margin-right: -10%;
+    
+}
+
+#child-1-left {
+
+}
+
+#child-1-right {
+  
+
+}
