@@ -1,0 +1,54 @@
+/*consistent things*/
+body {
+    background-color: rgb(43, 4, 77); 
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top: 5%;
+    
+}
+
+/*index.html divs flex*/
+#home-parent {
+    display: flex;
+
+}
+#contact-parent {
+    display: flex;
+}
+
+#about-parent{
+    display: flex;
+
+}
+#projects-parent {
+    display: flex;
+}
+
+
+
+
+/*About page*/
+
+#parent-1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+
+#about-pic {
+    width: 70%;
+    margin-right: -10%;
+    
+}
+
+#child-1-left {
+
+}
+
+#child-1-right {
+  
+
+}

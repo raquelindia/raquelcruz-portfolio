@@ -1,0 +1,66 @@
+
+.json-key {
+    color: rgb(251, 14, 176);
+}
+.json-value {
+    color: rgb(156, 86, 226);
+}
+body {
+    background-color: rgb(43, 4, 77); 
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top: 5%;
+    
+}
+
+#selfie {
+    height: 60%;
+    border-radius: 8px;
+    width: 80%;
+}
+
+#contact-button {
+    border-color: pink;
+    background: none;
+    color: white;
+    border-radius: 8px;
+    font-family: 'Ubuntu Mono', monospace;
+    padding: 1%;
+    margin-top: 5%;
+    padding-left: 12%;
+    padding-right: 12%;
+    font-size: 120%;
+}
+
+/* flex box */
+#level-one-parent {
+display: flex;
+justify-content: space-around;
+margin-left: 5%;
+margin-right: 5%;
+
+
+
+}
+
+#level-one-child-right {
+    flex-wrap: wrap;
+    
+   
+}
+
+#level-one-child-left {
+    flex-wrap: wrap;
+    width: 50%;
+   
+    
+}
+
+.level-two-parent {
+    display: flex;
+   
+
+}
+.level-two-child-left {
+    margin-right: -5%;
+}

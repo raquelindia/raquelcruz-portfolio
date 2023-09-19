@@ -1,0 +1,14 @@
+.ul-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.nav-button {
+    background: none;
+    color: white;
+    border: none;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: large;
+}
