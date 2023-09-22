@@ -18,10 +18,10 @@
 
     <!--HomePage-->
     <div id="home-parent"ng-if="state === 'home'">
-        <div id="home-child-left">
+        <div id="home-child-top">
         <div ng-include="'nav.html'"></div>
         </div>
-        <div id="home-child-right">
+        <div id="home-child-bottom">
     <div ng-if="state === 'home'" ng-include="'homeTemplate.html'"></div>
     </div>
     </div>
@@ -29,20 +29,20 @@
     <!--Contact Page-->
     
     <div id="contact-parent" ng-if="state === 'contact'">
-        <div id="contact-child-right">
+        <div id="contact-child-top">
             <div ng-include="'nav.html'"></div>
         </div>
-        <div id="contact-child-left">
+        <div id="contact-child-bottom">
         <div ng-if="state === 'contact'" ng-include="'contactTemplate.html'"></div>
         </div>
     </div>
 
     <!--About page-->
     <div id="about-parent" ng-if="state === 'about'">
-        <div id="about-child-left">
+        <div id="about-child-top">
             <div ng-include="'nav.html'"></div>
         </div>
-        <div id="about-child-right">
+        <div id="about-child-bottom">
             <div ng-if="state === 'about'" ng-include="'aboutTemplate.html'"></div>
         </div>
 
@@ -50,10 +50,10 @@
 
     <!--Projects page-->
   <div id="projects-parent" ng-if="state === 'projects'">
-    <div id="projects-child-left">
+    <div id="projects-child-top">
         <div ng-include="'nav.html'"></div>
     </div>
-    <div id="projects-child-right">
+    <div id="projects-child-bottom">
         <div ng-if="state === 'projects'" ng-include="'projectsTemplate.html'"></div>
     </div>
   </div>

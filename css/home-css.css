@@ -1,6 +1,16 @@
+.name {
+    font-size: 170%;
+}
 
+.greeting-name {
+    line-height: 0.5;
+}
+
+.role {
+    color:rgb(251, 14, 176);
+}
 .json-key {
-    color: rgb(251, 14, 176);
+    color: rgb(182, 14, 128);
 }
 .json-value {
     color: rgb(156, 86, 226);
