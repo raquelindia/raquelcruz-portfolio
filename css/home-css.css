@@ -40,7 +40,7 @@ body {
     width: 80%;
 }
 
-#contact-button {
+button {
     border: 1px solid rgb(251, 14, 176);
     background: none;
     color: white;
@@ -98,6 +98,13 @@ margin-right: 5%;
 #copilot {
     font-size: 120%;
 }
+
+
+.link {
+    text-decoration: none;
+    
+}
+
 
 /*media queries*/
 @media (max-width: 768px) {
