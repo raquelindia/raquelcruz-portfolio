@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'VT323';
-    src: url('programming-stuff/VT323/VT323-Regular.ttf') format('truetype');
+    src: url('/Users/raquelcruz/Desktop/programming-stuff/VT323/VT323-Regular.ttf') format('truetype');
 }
 body {
     background-color: rgb(0, 0, 0); 
