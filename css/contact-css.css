@@ -69,11 +69,15 @@ a {
         font-size: 105%; 
         
     }
+    .bottom-text {
+        margin-bottom: -50%;
+    }
 }
 
 @media (max-width: 576px) {
     #content-div {
         width: 90%;
+        height: 50%;
     }
     
 .email-address{
@@ -82,6 +86,7 @@ a {
 
     .bottom-text {
         padding-bottom: 70%;
+        margin-bottom: -50%;
     }
     .top-text {
         padding-top: 30%;
@@ -98,5 +103,9 @@ a {
 @media (max-width: 390px){
     #content-div {
         width: 90%;
+    }
+    .bottom-text {
+        padding-bottom: 70%;
+        margin-bottom: -50%;
     }
 }
