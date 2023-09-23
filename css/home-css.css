@@ -1,15 +1,19 @@
+@font-face {
+    font-family: 'VT323';
+    src: url('VT323/VT323-Regular.ttf') format('truetype');
+}
 .name {
     font-size: 300%;
-    font-family: 'VT323', regular;
+    font-family: 'VT323';
 }
 
 .greeting-name {
     line-height: 0.5;
-    font-family: 'VT323', regular;
+    font-family: 'VT323';
 }
 
 .role {
-    font-family: 'VT323', regular;
+    font-family: 'VT323';
 }
 .json-key {
     color: rgb(182, 14, 128);

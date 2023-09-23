@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'VT323';
+    src: url('VT323/VT323-Regular.ttf') format('truetype');
+}
 .projects {
     display: flex;
     margin-left: 5%;
@@ -32,7 +36,7 @@ p {
 
 .title {
     color: rgb(182, 14, 128);
-    font-family: 'VT323', regular;
+    font-family: 'VT323';
 
 }
 
