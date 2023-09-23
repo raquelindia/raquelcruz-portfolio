@@ -39,3 +39,9 @@ li {
 
 }
 
+@media (max-width: 390px) {
+    .nav-button {
+     font-size: 100%;
+    }
+ 
+ }
