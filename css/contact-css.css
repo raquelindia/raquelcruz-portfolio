@@ -140,4 +140,11 @@ a {
     }
 }
 
+@media (max-width: 390px) {
+ a {
+    font-size: 100%;
+ }  
+ 
+ }
+
 
