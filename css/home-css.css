@@ -28,6 +28,11 @@ body {
    
     
 }
+#desc {
+    line-height: 2;
+    font-size: 120%;
+    
+}
 
 #selfie {
     height: 60%;
