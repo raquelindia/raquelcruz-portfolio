@@ -4,7 +4,6 @@
     align-items: center;
     margin-top: 2%;
     /*box-shadow: 0 0 50px rgb(182, 14, 128, 0.7); */
-    border: 2px solid rgb(156, 86, 226);
     border-radius: 8px;
     margin-left: 20%;
     margin-right: 20%;
@@ -14,6 +13,7 @@
     padding-bottom: 10%;
     padding-top: 5%;
 }
+
 
 h1 {
     font-size: 300%;
