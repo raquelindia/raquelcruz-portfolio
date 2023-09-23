@@ -58,6 +58,9 @@ img {
    .title {
     font-size: 200%;
    }
+   .card {
+    margin-bottom: 2%;
+}
 
 
 }
@@ -70,6 +73,18 @@ img {
     }
     .title {
         font-size: 200%;
+    }
+    .card {
+        margin-bottom: 2%;
+    }
+
+
+}
+
+
+@media (max-width: 390px) {
+    .card {
+        margin-bottom: 3%;
     }
 
 
