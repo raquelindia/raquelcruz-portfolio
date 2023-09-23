@@ -25,15 +25,7 @@ a {
     justify-content: center;
     
 }
-#github {
-   
-}
 
-#github-a {
-    
-    
-    
-}
 
 #content-div {
     display: flex;
@@ -72,9 +64,6 @@ a {
 
 /*media queries*/
 @media (max-width: 768px) {
-    .buttons {
-        margin-right: 50;
-    }
     a {
         font-size: 120%;
         margin-left: 10%;
@@ -88,11 +77,6 @@ a {
     }
     h1 {
         font-size: 250%;
-    }
-    .content-div {
-     
-        
-    
     }
     p {
         width: 100%; 
