@@ -1,0 +1,14 @@
+.technologies {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.logos{
+   width: 0%;
+   
+   
+}
+img {
+    width: 50px;
+}
