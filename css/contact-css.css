@@ -11,6 +11,28 @@ h1 {
 
 p {
     font-size: 200%;
+   
+}
+
+a {
+    border: 2px solid rgb(156, 86, 226);
+    font-size: 150%;
+    padding: 3%;
+    border-radius: 8px;
+    padding-left: 100%;
+    padding-right: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+#github {
+   
+}
+
+#github-a {
+    
+    
+    
 }
 
 #content-div {
@@ -22,13 +44,21 @@ p {
     text-align: center;
     padding-top: 3%;
     padding-bottom: 3%;
-    width: 50%;
+    width: 75%;
     align-items: center;
     flex-wrap: wrap;
     /* box-shadow: 0 0 50px rgb(182, 14, 128, 0.7);  */
     border: 2px solid rgb(156, 86, 226);
     margin-bottom: 5%;
     
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    
+
 }
 .bottom-text {
     font-family: 'VT323', regular;
@@ -42,15 +72,32 @@ p {
 
 /*media queries*/
 @media (max-width: 768px) {
+    .buttons {
+        margin-right: 50;
+    }
+    a {
+        font-size: 120%;
+        margin-left: 10%;
+        margin-right: 20%;
+        padding-left: 80%;
+        padding-right: 80%;
+    }
+    #github-a {
+        padding-left: 80%;
+        padding-right: 80%;
+    }
     h1 {
         font-size: 250%;
     }
     .content-div {
+     
+        
     
     }
     p {
         width: 100%; 
         font-size: 200%;
+      
         
         
     }
@@ -58,10 +105,32 @@ p {
         font-size: 180%; 
         
     }
+
+    #email{
+        font-size: 200%;
+    }
+    #github {
+        margin-bottom: 8%;
+        
+    }
+    #linkedin {
+        
+    }
 }
 
 @media (max-width: 576px) {
-    
+    .buttons {
+        margin-right: 80;
+        margin-left: -20%;
+    }
+    a {
+        font-size: 300%;
+    }
+    #github-a {
+        padding-left: 80%;
+        padding-right: 80%;
+        
+    }
 
     .bottom-text {
         padding-bottom: 70%;
@@ -76,6 +145,10 @@ p {
         font-size: 90%;
         width: 100%;
         align-items: center;
+        
+    }
+    #github {
+        margin-bottom: 10%;
     }
 }
 
