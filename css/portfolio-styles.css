@@ -1,6 +1,6 @@
 /*consistent things*/
 body {
-    background-color: rgb(43, 4, 77); 
+    background-color: rgb(32, 3, 58); 
     color: white;
     font-family: 'Ubuntu Mono', monospace;
     margin-top: 1.5%;
@@ -62,9 +62,10 @@ body {
 }
 
 #projects-child-bottom {
-    display: flex;
-    justify-content: center;
     margin-top: 5%;
 
 }
 
+.logos {
+    width: 50%;
+}

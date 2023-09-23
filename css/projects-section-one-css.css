@@ -1,14 +1,48 @@
 .technologies {
     display: flex;
     justify-content: center;
+    gap: 1%;
+    border: 2px solid #FB0EB0;
+    border-radius: 8px;
+    margin-top: 2%;
+    padding: 5%;
+    flex-wrap: wrap;
+
     
 }
 
-.logos{
-   width: 0%;
-   
-   
+.logos {
+   width: 180px;
+   height: 150px;
+   border-radius: 8px;
+   margin-top: 5%;
+   margin-bottom: 5%;
+   box-shadow: 0 0 30px rgba(255, 255, 255, 0.7); 
+  
+   padding: 1%;
 }
-img {
-    width: 50px;
+
+#html {
+    background-color: rgb(234, 65, 3);
+    box-shadow: 0 0 30px rgba(234, 65, 3, 0.7); 
 }
+#css {
+    background-color: rgb(72, 155, 243);
+    box-shadow: 0 0 30px rgba(72, 155, 243, 0.7); 
+}
+#javascript {
+    background-color: rgb(214, 195, 17);
+    box-shadow: 0 0 30px rgba(214, 195, 17, 0.7); 
+}
+#java {
+    background-color: rgb(65, 97, 138);
+    box-shadow: 0 0 30px rgba(65, 97, 138, 0.7); 
+}
+#sql {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); 
+}
+
+
+
+

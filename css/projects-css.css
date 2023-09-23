@@ -1,12 +1,17 @@
-.projects-template-column{
+.projects-template-column {
     display: flex;
     flex-direction: column;
+
+   
 }
 
-.projects-title{
+.projects-title {
     font-size: 300%;
 }
 
-.header{
-    justify-content: center;
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+

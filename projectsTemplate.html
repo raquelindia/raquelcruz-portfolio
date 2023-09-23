@@ -6,19 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <title>Raquel Cruz | Software Engineer</title>
-    <link rel="stylesheet" href="css/portfolio-styles.css">
+    <link rel="stylesheet" href="css/projects-css.css">
 
 </head>
 <body>
     <div class="projects-template-column">
     <div class="header">
-<h1 class="projects-title">Projects</h1>
+        <div>
+<h1 class="projects-title"><span ng-style="{'color': listColor}">0.4 </span>Projects</h1>
 </div>
-<h2 ng-style="{'color': listColor}">Something to describe all of this</h2>
+<div>
+<h2 ng-style="{'color': valueColor}">Something to describe all of this</h2>
+</div>
+</div>
+<div>
+   <div class="logos-html" ng-include="'projects-section-one.html'"></div>
+</div>
+<div>
+    <div class="work-experience-html" ng-include="'work-experience.html'"></div>
+</div>
 
-<div class="body-column">
-   <div ng-include="'projects-section-one.html'"></div>
-</div>
 </div>
 </body>
 </html>
