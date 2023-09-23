@@ -52,6 +52,7 @@ a {
 
 .buttons {
     display: flex;
+    flex-shrink: 3;
     flex-direction: column;
     margin-right: 20%;
     
@@ -64,6 +65,7 @@ a {
 .body-div {
     display: flex;
     flex-direction: column;
+    flex-shrink: 3;
     align-items: center;
 }
 
