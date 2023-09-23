@@ -1,0 +1,38 @@
+.projects {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 1%;
+    margin-bottom: 5%;
+}
+
+.card {
+    border: 2px solid rgb(156, 86, 226);
+    border-radius: 8px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+p {
+    font-size: 80%;
+}
+
+.projects-column {
+
+}
+
+.cards-row{
+    display:flex;
+    gap: 1%;
+
+}
+
+.title {
+    color: rgb(182, 14, 128);
+
+}
+
+img {
+    width : 100%;
+    margin-bottom: 2%;
+}
