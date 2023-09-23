@@ -1,6 +1,7 @@
 .projects-template-column {
     display: flex;
     flex-direction: column;
+   
 
    
 }
@@ -14,4 +15,19 @@
     flex-direction: column;
     align-items: center;
 }
+
+
+/*media queries*/
+@media (max-width: 768px) {
+   
+}
+
+@media (max-width: 576px) {
+    
+
+
+}
+
+
+
 

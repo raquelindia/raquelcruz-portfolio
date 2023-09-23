@@ -75,3 +75,15 @@ margin-right: 5%;
 .level-two-child-left {
     margin-right: -5%;
 }
+
+/*media queries*/
+@media (max-width: 768px) {
+   
+}
+
+@media (max-width: 576px) {
+    
+
+
+}
+

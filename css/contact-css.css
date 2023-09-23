@@ -1,6 +1,6 @@
 .link {
     text-decoration: none;
-    color: #FB0EB0;
+    
 }
 
 h1 {
@@ -15,14 +15,17 @@ p {
 #content-div {
     display: flex;
     flex-direction: column;
+    margin-top: 3%;
     border-radius: 8px;
     background: none;
-    border: 1px solid rgb(251, 14, 176);
     text-align: center;
     padding-top: 3%;
     padding-bottom: 3%;
     width: 50%;
     align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 50px rgb(182, 14, 128, 0.7); 
+    margin-bottom: 5%;
     
 }
 
@@ -32,5 +35,45 @@ p {
     align-items: center;
 }
 
+/*media queries*/
+@media (max-width: 768px) {
+    h1 {
+        font-size: 250%;
+    }
+    .content-div {
+    
+    }
+    p {
+        width: 100%; 
+        font-size: 100%;
+        
+        
+    }
+    .email-address {
+        font-size: 105%; 
+        
+    }
+}
+
+@media (max-width: 576px) {
+    
+.email-address{
+    font-size: 150%;
+}
+
+    .bottom-text {
+        padding-bottom: 70%;
+    }
+    .top-text {
+        padding-top: 30%;
+
+        
+    }
+    p {
+        font-size: 90%;
+        width: 100%;
+        align-items: center;
+    }
+}
 
 
