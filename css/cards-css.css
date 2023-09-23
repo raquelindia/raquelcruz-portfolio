@@ -45,6 +45,10 @@ img {
     margin-bottom: 2%;
 }
 
+.keyword {
+    font-size: 120%;
+}
+
 /*media queries*/
 @media (max-width: 768px) {
    .cards-row{
