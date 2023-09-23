@@ -47,6 +47,7 @@ body {
 #level-one-parent {
 display: flex;
 justify-content: space-around;
+flex-wrap: wrap;
 margin-left: 5%;
 margin-right: 5%;
 
@@ -78,10 +79,40 @@ margin-right: 5%;
 
 /*media queries*/
 @media (max-width: 768px) {
+    .name {
+        font-size: 150%;
+    }
+    
+    .greeting-name {
+        line-height: 0.5;
+    }
+    #level-one-child-left {
+        margin-top: 5%;
+        width: 100%;
+        margin-bottom: 30%;
+       
+        
+    }
+    
    
 }
 
 @media (max-width: 576px) {
+    .name {
+        font-size: 150%;
+    }
+    
+    .greeting-name {
+        line-height: 0.5;
+    }
+    #level-one-child-left {
+        margin-top: 5%;
+        width: 100%;
+        margin-bottom: 30%;
+       
+        
+    }
+    
     
 
 
