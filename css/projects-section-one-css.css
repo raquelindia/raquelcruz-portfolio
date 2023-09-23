@@ -5,6 +5,7 @@
     margin-top: 2%;
     padding: 5%;
     flex-wrap: wrap;
+    gap: 1%;
 
     
 }
@@ -12,30 +13,39 @@
 .logos {
    width: 180px;
    height: 150px;
-   margin-top: 5%;
    margin-bottom: 5%;
    padding: 1%;
 }
 
 #html {
     background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(156, 86, 226);
+    border-radius: 8px;
 
     
 }
 #css {
     background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(156, 86, 226);
+    border-radius: 8px;
     
 }
 #javascript {
     background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(156, 86, 226);
+    border-radius: 8px;
    
 }
 #java {
     background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(156, 86, 226);
+    border-radius: 8px;
    
 }
 #sql {
     background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(156, 86, 226);
+    border-radius: 8px;
    
 }
 
