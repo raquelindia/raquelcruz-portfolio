@@ -16,6 +16,11 @@
     align-items: center;
 }
 
+h1 {
+    font-family: 'VT323', regular;
+}
+
+
 
 /*media queries*/
 @media (max-width: 768px) {

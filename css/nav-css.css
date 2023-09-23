@@ -11,8 +11,10 @@
     border: none;
     font-family: 'Ubuntu Mono', monospace;
     font-size: large;
+    font-family: 'VT323', regular;
 }
 
 li {
     margin-right: auto;
+   
 }
