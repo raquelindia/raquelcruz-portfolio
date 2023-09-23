@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'VT323';
     src: url('VT323/VT323-Regular.ttf') format('truetype');
-}.link {
+} 
+.link {
     text-decoration: none;
     
 }
@@ -38,7 +39,7 @@ a {
     text-align: center;
     padding-top: 3%;
     padding-bottom: 3%;
-    width: 50%;
+    width: 80%;
     align-items: center;
     flex-wrap: wrap;
     border: 2px solid rgb(156, 86, 226);
@@ -57,9 +58,7 @@ a {
     h1 {
         font-size: 250%;
     }
-    .content-div {
     
-    }
     p {
         width: 100%; 
         font-size: 100%;
@@ -73,6 +72,9 @@ a {
 }
 
 @media (max-width: 576px) {
+    #content-div {
+        width: 90%;
+    }
     
 .email-address{
     font-size: 150%;
@@ -93,3 +95,8 @@ a {
     }
 }
 
+@media (max-width: 390px){
+    #content-div {
+        width: 90%;
+    }
+}
