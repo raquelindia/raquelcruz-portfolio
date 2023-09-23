@@ -4,14 +4,16 @@
     flex-direction: row;
     justify-content: center;
     
+    
 }
 .nav-button {
     background: none;
     color: white;
     border: none;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: large;
+    font-size: 130%;
     font-family: 'VT323', regular;
+
 }
 
 li {

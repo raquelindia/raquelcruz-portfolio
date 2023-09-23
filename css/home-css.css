@@ -79,6 +79,17 @@ margin-right: 5%;
     margin-right: -5%;
 }
 
+#fiserv {
+    font-size: 120%;
+}
+
+#full-stack {
+    font-size: 120%;
+}
+#copilot {
+    font-size: 120%;
+}
+
 /*media queries*/
 @media (max-width: 768px) {
     .name {
@@ -91,11 +102,11 @@ margin-right: 5%;
     #level-one-child-left {
         margin-top: 5%;
         width: 100%;
-        margin-bottom: 30%;
-       
         
+       }
+    #contact-button {
+        margin-bottom: 5%;
     }
-    
    
 }
 
