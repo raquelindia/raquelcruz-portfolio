@@ -1,8 +1,7 @@
 @font-face {
     font-family: 'VT323';
     src: url('VT323/VT323-Regular.ttf') format('truetype');
-}
-.link {
+}.link {
     text-decoration: none;
     
 }
@@ -10,122 +9,76 @@
 h1 {
     font-size: 300%;
     text-align: center;
-    font-family: 'VT323';
 }
 
 p {
     font-size: 200%;
-   
 }
 
+
 a {
+    display:flex;
     border: 2px solid rgb(156, 86, 226);
-    font-size: 150%;
-    padding: 3%;
     border-radius: 8px;
-    padding-left: 100%;
-    padding-right: 100%;
-    display: flex;
-    justify-content: center;
+    padding: 10%;
+    width: 100%;
+    text-align: center;
     
 }
+
 
 
 #content-div {
     display: flex;
     flex-direction: column;
-    flex-shrink: 3;
     margin-top: 3%;
     border-radius: 8px;
     background: none;
     text-align: center;
     padding-top: 3%;
     padding-bottom: 3%;
-    width: 75%;
+    width: 50%;
     align-items: center;
     flex-wrap: wrap;
-    /* box-shadow: 0 0 50px rgb(182, 14, 128, 0.7);  */
     border: 2px solid rgb(156, 86, 226);
     margin-bottom: 5%;
     
 }
 
-.buttons {
-    display: flex;
-    flex-shrink: 3;
-    flex-direction: column;
-    margin-right: 20%;
-    
-
-}
-.bottom-text {
-    font-family: 'VT323';
-}
-
 .body-div {
     display: flex;
     flex-direction: column;
-    flex-shrink: 3;
     align-items: center;
 }
 
 /*media queries*/
 @media (max-width: 768px) {
-    a {
-        font-size: 120%;
-        margin-left: 10%;
-        margin-right: 20%;
-        padding-left: 80%;
-        padding-right: 80%;
-    }
-    #github-a {
-        padding-left: 80%;
-        padding-right: 80%;
-    }
     h1 {
         font-size: 250%;
     }
+    .content-div {
+    
+    }
     p {
         width: 100%; 
-        font-size: 200%;
-      
+        font-size: 100%;
         
         
     }
-    .bottom-text {
-        font-size: 180%; 
-        
-    }
-
-    #email{
-        font-size: 200%;
-    }
-    #github {
-        margin-bottom: 8%;
-        
-    }
-    #linkedin {
+    .email-address {
+        font-size: 105%; 
         
     }
 }
 
 @media (max-width: 576px) {
-    .buttons {
-        margin-right: 80;
-        margin-left: -20%;
-    }
-    a {
-        font-size: 300%;
-    }
-    #github-a {
-        padding-left: 80%;
-        padding-right: 80%;
-        
-    }
+    
+.email-address{
+    font-size: 150%;
+}
 
     .bottom-text {
         padding-bottom: 70%;
-        font-size: 150%;
     }
     .top-text {
         padding-top: 30%;
@@ -136,20 +89,6 @@ a {
         font-size: 90%;
         width: 100%;
         align-items: center;
-        
-    }
-    #github {
-        margin-bottom: 10%;
     }
 }
-
-@media (max-width: 390px) {
- a {
-    font-size: 100%;
-    padding-left: 20%;
-        padding-right: 20%;
- }  
- 
- }
-
 
