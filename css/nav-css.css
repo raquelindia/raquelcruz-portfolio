@@ -23,3 +23,19 @@ li {
     margin-right: auto;
    
 }
+
+@media (max-width: 768px) {
+   .nav-button {
+    font-size: 110%;
+   }
+    
+   
+}
+
+@media (max-width: 576px) {
+   .nav-button {
+    font-size: 110%;
+   }
+
+}
+
