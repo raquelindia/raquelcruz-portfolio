@@ -55,7 +55,7 @@ p {
         padding-top: 5%;
         margin-bottom: 10%;
         margin-top: 5%;
-        width: 45%;
+        width: 100%;
     }
     
    
@@ -70,7 +70,7 @@ p {
     }
 
     .work-experience-column{
-        width: 45%;
+        width: 100%;
         
     }
 
@@ -78,7 +78,20 @@ p {
 
 @media (max-width: 390px){
     .work-experience-column{
-        width: 40%;
+        width: 100%;
     }
+}
+
+@media (max-width: 353px){
+    .work-experience-column {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 313px){
+    .work-experience-column{
+        font-size: 70%;
+    }
+    
 }
 
