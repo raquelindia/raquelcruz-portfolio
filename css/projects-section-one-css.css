@@ -219,6 +219,7 @@
     }
     #img-desc-java {
         margin-top: 10%;
+        margin-bottom: 5%;
         
     }
 
@@ -227,7 +228,7 @@
 
 @media (max-width: 500px){
     .header-span {
-        font-size: 150%;
+        font-size: 0%;
        }
     .technologies {
         flex-direction: column;
@@ -254,6 +255,11 @@
     .logos {
         margin-bottom: 5%;
     }
+    #img-desc-java {
+        margin-bottom: 5%;
+        
+    }
+
 
 }
 
