@@ -27,6 +27,8 @@ h1 {
 
 h2 {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     font-size: 250%;
     
 }
@@ -49,7 +51,7 @@ p {
         font-size: 250%;
     }
     h2 {
-        font-size: 190;
+        font-size: 250;
     }
     .work-experience-column{
         padding-bottom: 20%;
@@ -67,7 +69,10 @@ p {
         font-size: 200%;
     }
     h2 {
-        font-size: 150%;
+        font-size: 250%;
+    }
+    h3 {
+        font-size: 120%;
     }
 }
 
