@@ -263,6 +263,12 @@
 
 }
 
+@media (max-width: 395px){
+    .header-span{
+        font-size: 115%;
+    }
+}
+
 
 
 
