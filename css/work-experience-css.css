@@ -8,6 +8,7 @@
     margin-right: 10%;
     */
     margin-bottom: 10%;
+    align-items: center;
     /*
     padding-left: 5%;
     padding-right: 5%;
@@ -70,6 +71,7 @@ p {
 
     .work-experience-column{
         width: 45%;
+        
     }
 
 }
