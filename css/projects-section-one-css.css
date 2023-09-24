@@ -228,7 +228,7 @@
 
 @media (max-width: 500px){
     .header-span {
-        font-size: 0%;
+        font-size: 135%;
        }
     .technologies {
         flex-direction: column;
