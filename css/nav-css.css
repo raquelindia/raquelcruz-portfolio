@@ -8,7 +8,7 @@
 .ul-nav {
     list-style: none;
     display: flex;
-    gap: 1%;
+    
     
    
     
@@ -33,7 +33,7 @@
 #links {
     display: flex;
     justify-content: flex-end;
-    margin-right: 2%;
+    margin-right: 1%;
     
 }
 
@@ -45,7 +45,7 @@
 
 @media (max-width: 768px) {
    .nav-button {
-    font-size: 110%;
+    font-size: 100%;
    }
     
    
@@ -53,14 +53,14 @@
 
 @media (max-width: 576px) {
    .nav-button {
-    font-size: 110%;
+    font-size: 100%;
    }
 
 }
 
 @media (max-width: 390px) {
     .nav-button {
-     font-size: 100%;
+     font-size: 90%;
     }
  
  }
