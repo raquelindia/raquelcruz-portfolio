@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="css/projects-section-one-css.css">
 </head>
 <body >
-<div class="technologies">
-   <img class="logos" id="html" src="images/html-logo.png" alt="html logo">
-    <img class="logos" id="css" src="images/css-logo.png" alt="css logo">
-    <img class="logos" id="javascript" src="images/js-logo.png" alt="javascript logo">
-    <img class="logos" id="java" src="images/java-logo.png" alt="Java logo">
-    
+    <hr class="line">
+    <h2 class="tech-desc" ng-style="{'color': linkColor}">Some of my favorite <span ng-style="{'font-family': 'VT323', 'color': listColor}">languages</span> & <span ng-style="{'font-family': 'VT323', 'color': listColor}">things</span> to use <span ng-style="{'font-family': 'VT323', 'color': valueColor}">^_^</span></h2>
 </div>
+<div class="technologies">
+    <div class="left">
+    <div class="img-desc"><img class="logos" id="html" src="images/html-logo.png" alt="html logo"><p class="keyword" ng-style="{'color':  '#FF5F1F', 'font-family': 'VT323'}">HTML</p></div>
+    <div class="img-desc"><img class="logos" id="css" src="images/css-logo.png" alt="css logo"><p class="keyword" ng-style="{'color': '#0082cb', 'font-family': 'VT323'}">CSS</p></div>
+    </div>
+
+    <div class="right">
+        <div class="img-desc"><img class="logos" id="javascript" src="images/js-logo.png" alt="javascript logo"><p class="keyword" ng-style="{'color': 'yellow', 'font-family': 'VT323'}">JAVASCRIPT</p></div>
+        <div class="img-desc"><img class="logos" id="java" src="images/java-logo.png" alt="Java logo"><p class="keyword" ng-style="{'color': '#89CFF0', 'font-family': 'VT323'}">JAVA</p></div> 
+    </div>
+</div>
+<hr class="line">
 </body>
 </html>

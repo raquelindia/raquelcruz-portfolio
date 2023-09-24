@@ -14,6 +14,11 @@
     background-color:  rgb(156, 86, 226);
     border:rgb(156, 86, 226)
 }
+
+.tech-desc {
+    margin-top: 10%;
+} 
+
 .projects-title {
     font-size: 300%;
 }
