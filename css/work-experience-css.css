@@ -18,21 +18,22 @@
 } */
 }
 
-h1 {
-    font-size: 300%;
+ #work-section-title {
+    font-size: 400%;
+    text-align: center;
     padding-top: 5%;
     font-family: 'VT323';
    
 }
 
-h2 {
+.company {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     font-size: 250%;
     
 }
-h3 {
+.role {
     font-size: 150%;
 
 }
@@ -40,7 +41,7 @@ p {
     font-size: 200%;
 }
 
-.bottom-text {
+#bottom-text {
     padding-bottom: 5%;
     font-size: 150%;
 }
@@ -51,7 +52,7 @@ p {
         font-size: 250%;
     }
     h2 {
-        font-size: 250;
+        font-size: 250%;
     }
     .work-experience-column{
         padding-bottom: 20%;
@@ -66,7 +67,7 @@ p {
 
 @media (max-width: 576px) {
     h1 {
-        font-size: 200%;
+        font-size: 10%;
     }
     h2 {
         font-size: 250%;
@@ -77,10 +78,7 @@ p {
 }
 
 @media (max-width: 353px){
-    .work-experience-column {
-        font-size: 80%;
-       
-    }
+   
 }
 
 @media (max-width: 313px){

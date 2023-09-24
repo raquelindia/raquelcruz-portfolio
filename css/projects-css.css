@@ -20,10 +20,11 @@
 } 
 
 .projects-title {
-    font-size: 300%;
+    font-size: 400%;
     display: flex;
     flex-direction: row;
     gap: 5%;
+    margin-bottom: 50%;
 }
 
 .h1-number {
