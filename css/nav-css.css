@@ -2,11 +2,13 @@
     font-family: 'VT323';
     src: url('VT323/VT323-Regular.ttf') format('truetype');
 }
+
+
+
 .ul-nav {
     list-style: none;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+   
     
     
 }
@@ -36,10 +38,6 @@
     width: 5%;
 }
 
-li {
-    margin-right: auto;
-   
-}
 
 @media (max-width: 768px) {
    .nav-button {

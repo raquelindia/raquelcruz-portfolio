@@ -20,31 +20,15 @@ body {
 }
 
 
+
 #home-child-bottom {
     margin-top: 5%;
 
 }
 
-#contact-parent {
-    display: flex;
-    flex-direction: column;
-}
-
-#contact-child-top {
-
-}
-
-#contact-child-bottom {
-    margin-top: 5%;
-}
-
 #about-parent{
     display: flex;
     flex-direction: column;
-
-}
-
-#about-child-top {
 
 }
 
@@ -58,16 +42,10 @@ body {
     margin-top: 0;
 }
 
-#projects-child-top {
-
-
-}
-
 #projects-child-bottom {
     margin-top: 5%;
 
 }
-
 
 .h1-number {
   font-size: 70%;
