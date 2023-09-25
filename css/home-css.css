@@ -44,7 +44,7 @@ body {
 
 .button {
     border: 1px solid rgb(251, 14, 176);
-    background: none;
+    background: black;
     color: white;
     border-radius: 8px;
     font-family: 'Ubuntu Mono', monospace;
