@@ -2,8 +2,9 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <title>Raquel Cruz | Software Engineer</title>
     <link rel="stylesheet" href="css/portfolio-styles.css">
@@ -14,80 +15,36 @@
 <body>
     
 
-    <div class="starry-night">
-    <div ng-app="portfolioApp" ng-controller="portfolioController" >
+    <!-- <div class="starry-night"> -->
+    <div ng-app="portfolioApp" ng-controller="portfolioController">
+ <div ng-include="'nav.html'"></div>
+  <div id="index" ng-view></div>
 
-       <!-- <div ng-include="'nav.html'"></div> -->
-
-    <!--HomePage-->
-    <div id="home-parent" ng-if="state === 'home'">
-        <div id="home-child-top">
-        <div ng-include="'nav.html'"></div>
-        </div>
-        <div id="home-child-bottom">
-    <div ng-if="state === 'home'" ng-include="'homeTemplate.html'"></div>
-    </div>
-    </div>
-
-    <!--Contact Page-->
-    
-    <div id="contact-parent" ng-if="state === 'contact'">
-        <div id="contact-child-top">
-            <div ng-include="'nav.html'"></div>
-        </div>
-        <div id="contact-child-bottom">
-        <div ng-if="state === 'contact'" ng-include="'contactTemplate.html'"></div>
-        </div>
-    </div>
-
-    <!--About page-->
-    <div id="about-parent" ng-if="state === 'about'">
-        <div id="about-child-top">
-            <div ng-include="'nav.html'"></div>
-        </div>
-        <div id="about-child-bottom">
-            <div ng-if="state === 'about'" ng-include="'aboutTemplate.html'"></div>
-        </div>
-
-    </div>
-
-    <!--Projects page-->
-  <div id="projects-parent" ng-if="state === 'projects'">
-    <div id="projects-child-top">
-        <div ng-include="'nav.html'"></div>
-    </div>
-    <div id="projects-child-bottom">
-        <div ng-if="state === 'projects'" ng-include="'projectsTemplate.html'"></div>
-    </div>
-  </div>
- 
-
+<!-- </div> -->
 </div>
-</div>
-
-</body>
 <script>
-    var app = angular.module("portfolioApp", []);
+    var app = angular.module("portfolioApp", ["ng-route"]);
     app.controller('portfolioController', function($scope){
        $scope.state = "home"; 
        $scope.listColor = '#FB0EB0';
        $scope.valueColor = '#9C56E2';
-
-       $scope.toContact = function(){
-        $scope.state = "contact";
-       };
-
-       $scope.toProjects = function(){
-        $scope.state = "projects";
-       };
-       $scope.toAbout = function(){
-        $scope.state = "about";
-       } 
-       $scope.toHome = function(){
-        $scope.state = "home";
-       }
-    })
+    });
+    app.config(function($routeProvider){
+        $routeProvider
+        .when("#/!", {
+            templateUrl : "homeTemplate.html",
+            controller: 'portfolioController'
+        })
+        .when("/about", {
+            templateUrl : "aboutTemplate.html",
+            controller: 'portfolioController'
+        })
+        .when("/projects", {
+            templateUrl : "projectsTemplate.html",
+            controller: 'portfolioController'
+        });
+    });
 
 </script>
-
+</body>
 </html>

@@ -3,17 +3,15 @@
     <link rel="stylesheet" href="css/nav-css.css">
 </head>
 <body>
-
-    <!-- # for test links- change later-->
     <div id="space">
     <div id="star-button">
-    <button ng-click="toHome()" ng-style="{'background': 'none', 'margin-top': '10%'}" class="nav-button"><img ng-style="{'width': '2.5em'}" id="purple-star"src="images/purple-star.png"></button>
+    <a ng-href="#!home" ng-style="{'background': 'none', 'margin-top': '10%'}" class="nav-button"><img ng-style="{'width': '2.5em'}" id="purple-star"src="images/purple-star.png"></a>
     </div>
     <div id="links">
     <ul class="ul-nav"> 
-        <span class="numbers" ng-style="{'color': listColor}">01. </span><li><button ng-style="'font-family': 'VT323'" ng-click="toHome()" class="nav-button">Home</button></li>
-        <span class="numbers" ng-style="{'color': listColor}">02. </span> <li><button ng-style="'font-family': 'VT323'" ng-click="toAbout()" class="nav-button">About</button></li>
-        <span class="numbers" ng-style="{'color': listColor}">03. </span><li><button ng-style="'font-family': 'VT323'" ng-click="toProjects()" class="nav-button"> Projects</button></li>
+        <span class="numbers" ng-style="{'color': listColor}">01. </span><li><a ng-href="#!home" ng-style="'font-family': 'VT323'" class="nav-button">Home</a></li>
+        <span class="numbers" ng-style="{'color': listColor}">02. </span> <li><a ng-href="#!about" ng-style="'font-family': 'VT323'" class="nav-button">About</a></li>
+        <span class="numbers" ng-style="{'color': listColor}">03. </span><li><a ng-href="#!projects" ng-style="'font-family': 'VT323'" class="nav-button"> Projects</a></li>
     </ul>
     </div>
     </div>
