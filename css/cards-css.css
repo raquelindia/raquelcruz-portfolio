@@ -24,7 +24,8 @@
 
 .card {
     border: 2px solid rgb(156, 86, 226);
-    border-radius: 8px;
+    border-left: none;
+    border-right: none;
     padding-left: 2%;
     padding-right: 2%;
     width: 300px;
@@ -33,7 +34,8 @@
 }
 
 p {
-    font-size: 80%;
+    font-size: 140%;
+    margin-bottom: 40%;
 }
 
 
