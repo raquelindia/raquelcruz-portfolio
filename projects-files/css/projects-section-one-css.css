@@ -101,19 +101,8 @@
     height: 50%;
     width: 35%;
     }
-    #javascript {
-    width: 40%;
-    margin-top: 10%;
-    height: 70%;
     }
-    #java {
-    height: 70%;
-    width: 100%;
-    }
-    #img-desc-java {
-    margin-top: 10%;
-    }
-    }
+    
     
     @media (max-width: 800px){
     .logos {
