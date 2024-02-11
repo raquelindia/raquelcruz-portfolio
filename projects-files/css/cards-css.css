@@ -82,6 +82,11 @@ h2 {
 
 }
 
+.projects-descriptions {
+    color: #24c642;
+    font-family: 'bitwise-font';
+}
+
 /*media queries*/
 @media (max-width: 920px) {
     .projects-section-title {

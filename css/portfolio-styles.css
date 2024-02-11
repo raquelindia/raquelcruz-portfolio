@@ -1,5 +1,8 @@
 /*consistent things*/
-
+@font-face {
+    font-family: 'bitwise-font';
+    src: url('bitwise-font/Bitwise-m19x.ttf') format('truetype');
+}
 @font-face {
     font-family: 'VT323';
     src: url('VT323/VT323-Regular.ttf') format('truetype');
