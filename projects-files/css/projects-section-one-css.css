@@ -9,7 +9,7 @@
     gap: 2%;
     font-size: 220%;
     justify-content: center;
-    margin-top: -5%;
+   
     
     }
     
@@ -76,7 +76,11 @@
     
     
     @media (max-width: 800px){
-    
+        .technologies {
+          
+            font-size: 180%;
+           
+            }
     }
     
     @media (max-width: 700px) {
@@ -85,6 +89,7 @@
     }
     .technologies {
         flex-direction: column;
+       
     }
  
     }
@@ -97,27 +102,8 @@
     flex-direction: column;
     }
     
-    #javascript {
-    background-color: rgb(0, 0, 0);
-    border-radius: 8px;
-    width: 22%;
-    margin-left: 30%;
-    margin-right: 3%;
-    }
-    #java {
-    background-color: rgb(0, 0, 0);
-    border-radius: 8px;
-    width: 70%;
-    margin-left: 50%;
-    margin-bottom: 20%;
-    margin-top: 15%;
-    }
-    .logos {
-    margin-bottom: 5%;
-    }
-    #img-desc-java {
-    margin-bottom: 5%;
-    }
+  
+   
     
     
     }
