@@ -39,6 +39,10 @@
     margin-bottom: 2%;
 }
 
+#cards-line {
+    width: 80%;
+}
+
 p {
     font-size: 140%;
     margin-bottom: 40%;
