@@ -11,9 +11,10 @@
     list-style: none;
     display: flex;  
     justify-content: space-between;
-    gap: 4%;
-    margin-right: 25%;
     font-size: 125%;
+    position: relative;
+    left: -50px;
+    gap: 4%;
     
 }
 .nav-button {
