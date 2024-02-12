@@ -91,6 +91,11 @@
         flex-direction: column;
        
     }
+    .technologies-parent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
  
     }
     
