@@ -44,9 +44,10 @@ body {
 
 .button {
     border: 1px solid rgb(251, 14, 176);
+    border-right: none;
+    border-left: none;
     background: black;
     color: white;
-    border-radius: 8px;
     font-family: 'Ubuntu Mono', monospace;
     padding: 1%;
     margin-top: 5%;
@@ -85,14 +86,8 @@ margin-right: 5%;
 
 
 
-#fiserv {
-    font-size: 120%;
-}
 
-#full-stack {
-    font-size: 120%;
-}
-#copilot {
+.highlighted {
     font-size: 120%;
 }
 

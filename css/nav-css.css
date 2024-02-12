@@ -2,11 +2,6 @@
     font-family: 'VT323';
     src: url('VT323/VT323-Regular.ttf') format('truetype');
 }
-/*
-li:hover {
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
-}
-*/
 
 .glow:hover {
     box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
@@ -15,6 +10,10 @@ li:hover {
 .ul-nav {
     list-style: none;
     display: flex;  
+    justify-content: space-between;
+    gap: 4%;
+    margin-right: 25%;
+    font-size: 125%;
     
 }
 .nav-button {
