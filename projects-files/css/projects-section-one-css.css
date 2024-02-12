@@ -7,9 +7,9 @@
     display: flex;
     flex-direction: row;
     gap: 2%;
-    font-size: 220%;
+    font-size: 420%;
     justify-content: center;
-   
+    margin-top: -8%;
     
     }
     
@@ -54,7 +54,7 @@
     
     @media (max-width: 1200px) {
     .header-span {
-    font-size: 200%;
+    font-size: 250%;
     }
   
   
@@ -91,9 +91,7 @@
     }
     
     @media (max-width: 700px) {
-    .header-span {
-    font-size: 180%;
-    }
+  
     .technologies {
         flex-direction: column;
         font-size: 250%;
@@ -109,68 +107,64 @@
     
     @media (max-width: 500px){
     .header-span {
-    font-size: 180%;
+    font-size: 220%;
     }
     .technologies {
     flex-direction: column;
 
     }
-    
-  
-   
-    
-    
+
     }
     
     @media (max-width: 395px){
     .header-span{
-    font-size: 180%;
+    font-size: 220%;
     }
     }
     
     @media (max-width: 380px){
     .header-span {
-    font-size: 180%
+    font-size: 220%;
     }
     }
     @media (max-width: 363px){
     .header-span {
-    font-size: 180%
+    font-size: 180%;
     }
     }
     @media (max-width: 347px){
     .header-span {
-    font-size: 180%
+    font-size: 220%;
     }
     }
     
     @media (max-width: 332px){
     .header-span {
-    font-size: 180%
+    font-size: 220%
     }
     }
     @media (max-width: 331px) {
     .header-span {
-    font-size: 180%
+    font-size: 220%
     }
     }
     
     
     @media (max-width: 316px) {
     .header-span {
-    font-size: 180%
+    font-size: 220%
     }
     }
     
     @media (max-width: 300px) {
     .header-span {
-    font-size: 180%
+    font-size: 220%
     }
     }
     
     @media (max-width: 290px) {
-    .header-span{
-    font-size: 180%
+    .header-span {
+    font-size: 220%;
     }
     }
     
