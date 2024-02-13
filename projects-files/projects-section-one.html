@@ -14,38 +14,38 @@
 <div class="technologies-parent">
 <div class="technologies mb-24">
 <div>
-<p class="keyword" ng-style="{'color': '#FF5F1F', 'font-family': 'VT323'}">HTML</p>
-<p class="keyword" ng-style="{'color': '#0082cb', 'font-family': 'VT323'}">CSS</p>
-<p class="keyword" ng-style="{'color': valueColor, 'font-family': 'VT323'}">SASS</p>
-<p class="keyword" ng-style="{'color': '#89CFF0', 'font-family': 'VT323'}">TAILWIND</p>
+<p class="keyword" ng-mouseover="hoverHTML = false" ng-mouseleave="hoverHTML = true" ng-style="{'color': hoverHTML ? '#FF5F1F' : 'violet', 'font-family': 'VT323'}">HTML</p>
+<p class="keyword" ng-mouseover="hoverCSS = false" ng-mouseleave="hoverCSS = true" ng-style="{'color': hoverCSS ? '#0082cb' : 'orange', 'font-family': 'VT323'}">CSS</p>
+<p class="keyword" ng-mouseover="hoverSASS = false" ng-mouseleave="hoverSASS = true" ng-style="{'color': hoverSASS ? valueColor : 'red', 'font-family': 'VT323'}">SASS</p>
+<p class="keyword" ng-mouseover="hoverTAILWIND = false" ng-mouseleave="hoverTAILWIND = true" ng-style="{'color': hoverTAILWIND ? '#89CFF0' : 'yellow', 'font-family': 'VT323'}">TAILWIND</p>
 </div>
 
 <div>
-<p class="keyword" ng-style="{'color': 'violet', 'font-family': 'VT323'}">BOOTSTRAP</p>
-<p class="keyword" ng-style="{'color': 'yellow', 'font-family': 'VT323'}">JAVASCRIPT</p>
-<p class="keyword" ng-style="{'color': '#ff7d26', 'font-family': 'VT323'}">JAVA</p>
-<p class="keyword" ng-style="{'color': 'red', 'font-family': 'VT323'}">ANGULARJS</p>
+<p class="keyword" ng-mouseover="hoverBOOTSTRAP = false" ng-mouseleave="hoverBOOTSTRAP = true" ng-style="{'color': hoverBOOTSTRAP ? 'violet' : 'lightgreen', 'font-family': 'VT323'}">BOOTSTRAP</p>
+<p class="keyword" ng-mouseover="hoverJAVASCRIPT = false" ng-mouseleave="hoverJAVASCRIPT = true" ng-style="{'color': hoverJAVASCRIPT ? 'yellow' : valueColor, 'font-family': 'VT323'}">JAVASCRIPT</p>
+<p class="keyword" ng-mouseover="hoverJAVA = false" ng-mouseleave="hoverJAVA = true" ng-style="{'color': hoverJAVA ? '#ff7d26' : 'cyan', 'font-family': 'VT323'}">JAVA</p>
+<p class="keyword" ng-mouseover="hoverANGULARJS = false" ng-mouseleave="hoverANGULARJS = true" ng-style="{'color': hoverANGULARJS ? 'red' : 'white', 'font-family': 'VT323'}">ANGULARJS</p>
 </div>
 
 <div>
-<p class="keyword" ng-style="{'color': 'white', 'font-family': 'VT323'}">EXPRESS</p>
-<p class="keyword" ng-style="{'color': '#ff7d26', 'font-family': 'VT323'}">SEQUELIZE</p>
-<p class="keyword" ng-style="{'color': 'red', 'font-family': 'VT323'}">REACT</p>
-<p class="keyword" ng-style="{'color': '#0082cb', 'font-family': 'VT323'}">NODE.JS</p>
+<p class="keyword" ng-mouseover="hoverEXPRESS = false" ng-mouseleave="hoverEXPRESS = true" ng-style="{'color': hoverEXPRESS ? 'white' : 'hotpink', 'font-family': 'VT323'}">EXPRESS</p>
+<p class="keyword" ng-mouseover="hoverSEQUELIZE = false" ng-mouseleave="hoverSEQUELIZE = true" ng-style="{'color': hoverSEQUELIZE ? '#ff7d26' : 'lightpink', 'font-family': 'VT323'}">SEQUELIZE</p>
+<p class="keyword" ng-mouseover="hoverREACT = false" ng-mouseleave="hoverREACT = true" ng-style="{'color': hoverREACT ? 'red' : 'tan', 'font-family': 'VT323'}">REACT</p>
+<p class="keyword" ng-mouseover="hoverNODEJS = false" ng-mouseleave="hoverNODEJS = true" ng-style="{'color': hoverNODEJS ? '#0082cb' : terminalGreen, 'font-family': 'VT323'}">NODE.JS</p>
 </div>
 
 <div>
-<p class="keyword" ng-style="{'color': valueColor, 'font-family': 'VT323'}">SQL</p>
-<p class="keyword" ng-style="{'color': '#0082cb', 'font-family': 'VT323'}">SQLITE3</p>
-<p class="keyword" ng-style="{'color': 'yellow', 'font-family': 'VT323'}">AUTH0</p>
-<p class="keyword" ng-style="{'color': 'hotpink', 'font-family': 'VT323'}">RESTFUL APIs</p>
+<p class="keyword" ng-mouseover="hoverSQL = false" ng-mouseleave="hoverSQL = true" ng-style="{'color': hoverSQL ? valueColor : 'cyan', 'font-family': 'VT323'}">SQL</p>
+<p class="keyword" ng-mouseover="hoverSQLITE3 = false" ng-mouseleave="hoverSQLITE3 = true" ng-style="{'color': hoverSQLITE3 ? '#0082cb' : '#FF5F1F', 'font-family': 'VT323'}">SQLITE3</p>
+<p class="keyword" ng-mouseover="hoverAUTH0 = false" ng-mouseleave="hoverAUTH0 = true" ng-style="{'color': hoverAUTH0 ? 'yellow' : 'white', 'font-family': 'VT323'}">AUTH0</p>
+<p class="keyword" ng-mouseover="hoverRESTAPI = false" ng-mouseleave="hoverRESTAPI = true" ng-style="{'color': hoverRESTAPI ? 'hotpink' : 'red', 'font-family': 'VT323'}">RESTFUL APIs</p>
 </div>
 
 <div>
-<p class="keyword" ng-style="{'color': 'lightgreen', 'font-family': 'VT323'}">GIT</p>
-<p class="keyword" ng-style="{'color': 'orange', 'font-family': 'VT323'}">POSTMAN</p>
-<p class="keyword" ng-style="{'color': 'violet', 'font-family': 'VT323'}">JASMINE</p>
-<p class="keyword" ng-style="{'color': 'yellow', 'font-family': 'VT323'}">JEST</p>
+<p class="keyword" ng-mouseover="hoverGIT = false" ng-mouseleave="hoverGIT = true" ng-style="{'color': hoverGIT ? 'lightgreen' : 'lavender', 'font-family': 'VT323'}">GIT</p>
+<p class="keyword" ng-mouseover="hoverPOSTMAN = false" ng-mouseleave="hoverPOSTMAN = true" ng-style="{'color': hoverPOSTMAN ? 'orange' : 'cyan', 'font-family': 'VT323'}">POSTMAN</p>
+<p class="keyword" ng-mouseover="hoverJASMINE = false" ng-mouseleave="hoverJASMINE = true" ng-style="{'color': hoverJASMINE ? 'violet' : 'lightgrey', 'font-family': 'VT323'}">JASMINE</p>
+<p class="keyword" ng-mouseover="hoverJEST = false" ng-mouseleave="hoverJEST = true" ng-style="{'color': hoverJEST ? 'yellow' : 'salmon', 'font-family': 'VT323'}">JEST</p>
 </div>
 
 </div>
