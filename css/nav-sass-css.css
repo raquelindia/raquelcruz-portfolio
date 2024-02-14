@@ -4,4 +4,7 @@
     box-shadow: 0px 6px 6px 0px rgba(255, 255, 255, 0.4);
     color: #9C56E2; }
 
+.nav-button:hover {
+  text-decoration: underline solid white; }
+
 /*# sourceMappingURL=nav-sass-css.css.map */

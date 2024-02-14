@@ -8,3 +8,8 @@
     }
   }
   
+.nav-button {
+    &:hover {
+        text-decoration: underline solid white;
+    }
+}

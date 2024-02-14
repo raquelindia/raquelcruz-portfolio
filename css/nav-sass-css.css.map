@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,UAAW;EACP,UAAU,EAAE,mBAAmB;EAE/B,gBAAQ;IACJ,UAAU,EAAE,wCAAyC;IACrD,KAAK,EAAE,OAAO",
+"mappings": "AAAA,UAAW;EACP,UAAU,EAAE,mBAAmB;EAE/B,gBAAQ;IACJ,UAAU,EAAE,wCAAyC;IACrD,KAAK,EAAE,OAAO;;AAMlB,iBAAQ;EACJ,eAAe,EAAE,qBAAqB",
 "sources": ["nav-sass-styles.scss"],
 "names": [],
 "file": "nav-sass-css.css"

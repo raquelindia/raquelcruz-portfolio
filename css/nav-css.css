@@ -16,6 +16,7 @@
     left: -50px;
     gap: 4%;
     
+    
 }
 .nav-button {
     background: none;
@@ -23,6 +24,7 @@
     border: none;
     font-size: 130%;
     font-family: 'VT323';
+    text-decoration: underline solid #9C56E2;
 }
 
 
@@ -36,7 +38,7 @@
 #links {
     display: flex;
     justify-content: flex-end;
- 
+    
     
 }
 
