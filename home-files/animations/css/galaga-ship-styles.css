@@ -19,3 +19,10 @@
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 1200px) {
+    .pixels {
+        width: 5px;
+        height: 5px;
+    }
+}
