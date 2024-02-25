@@ -1,5 +1,4 @@
 #ship-container {
-    background-color: black;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -8,7 +7,7 @@
 #spaceship {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+   
 }
 
 .columns {
