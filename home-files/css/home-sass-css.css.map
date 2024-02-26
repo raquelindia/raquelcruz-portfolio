@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AACI,YAAQ;EACJ,KAAK,EAAE,OAAO;EACd,UAAU,EAAE,yCAA0C",
-"sources": ["home-sass-styles.scss"],
-"names": [],
-"file": "home-sass-css.css"
-}
+{"version":3,"sourceRoot":"","sources":["home-sass-styles.scss"],"names":[],"mappings":"AACI;EACI;EACA;;;AAIN;EACE;;;AAIF;EACE;IACE;;EAEF;IACE","file":"home-sass-css.css"}
