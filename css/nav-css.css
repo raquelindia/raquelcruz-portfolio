@@ -56,7 +56,9 @@
    .nav-button {
     font-size: 100%;
    }
-
+   .ul-nav {
+    margin-right: -5%;
+   }
     
    
 }
