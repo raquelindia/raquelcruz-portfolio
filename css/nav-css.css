@@ -15,8 +15,12 @@
     position: relative;
     left: -50px;
     gap: 4%;
+    margin-right: 10%;   
     
-    
+}
+
+#star-button {
+    margin-left: 2%;
 }
 .nav-button {
     background: none;
