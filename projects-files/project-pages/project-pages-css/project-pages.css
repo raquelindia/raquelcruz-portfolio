@@ -4,3 +4,18 @@
     border:rgb(156, 86, 226);
     width: 80%;
 }
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.first-img {
+    width: 500px;
+    height: 500px;
+}
+
+.center-content {
+   display: flex;
+   justify-content: center;
+}
