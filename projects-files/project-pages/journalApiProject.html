@@ -18,8 +18,8 @@
         <div><hr class="line"></div>
 
         <div>
-            <div class="center-content"><img class="first-img" alt="Screenshot of Auth0 login" src="./projects-files/images/journal-api.png"></div>
-            <div class="center-content"><p>This is a screenshot of the Auth0 login that I added.</p></div>
+            <div class="center-content"><img class="first-img" alt="Screenshot of Auth0 login" src="{{ journalApiCarousel[journalApiCarouselCount].image  }}"></div>
+            <div class="center-content"><p>{{ journalApiCarousel[journalApiCarouselCount].caption }}</p><span><button ng-click="toggleJournalApiCarousel()">next</button></span></div>
         </div>
 
         <div class="center-content"><a href="">Github Repository</a></div>

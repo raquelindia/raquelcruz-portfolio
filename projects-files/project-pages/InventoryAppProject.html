@@ -16,8 +16,8 @@
         <div><hr class="line"></div>
 
         <div>
-            <div class="center-content"><img class="first-img" alt="Screenshot of Inventory App" src="./projects-files/images/inventory-app.png"></div>
-            <div class="center-content"><p>This is the homepage.</p></div>
+            <div class="center-content"><img class="first-img" alt="Screenshot of Inventory App" src="{{ inventoryAppCarousel[inventoryAppCarouselCount].image  }}"></div>
+            <div class="center-content"><p>{{  inventoryAppCarousel[inventoryAppCarouselCount].caption }}</p><span><button ng-click="toggleInventoryAppCarousel()">next</button></span></div>
         </div>
         
         <div class="center-content"><a href="">Github Repository</a></div>
@@ -50,7 +50,7 @@
         </div>
 
         <div><hr class="line"></div>
-
+            
 
         <div></div>
         </div>

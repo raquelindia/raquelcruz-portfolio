@@ -17,8 +17,8 @@
         <div><hr class="line"></div>
 
         <div>
-            <div class="center-content"><img class="first-img" alt="Screenshot of Accounts page" src="./projects-files/images/chase-clone-img.png"></div>
-            <div class="center-content"><p>This is the Accounts page that I worked on.</p></div>
+            <div class="center-content"><img class="first-img" alt="Screenshot of Accounts page" src="{{chaseCloneCarousel[chaseCarouselCount].image}}"></div>
+            <div class="center-content"><p>{{ chaseCloneCarousel[chaseCarouselCount].caption}}</p><span><button ng-click="toggleChaseCarousel()">next</button></span></div>
         </div>
 
         <div class="center-content"><a href="">Github Repository</a></div>
@@ -53,6 +53,17 @@
 </div>
 
 <div><hr class="line"></div>
+
+
+<div>
+    <div><h3>Unit tests</h3></div>
+    <div>
+        <p>
+            For this projext I used Jasmine to test the components. 
+        </p>
+    </div>
+</div>
+
 
         </div>
     </body>

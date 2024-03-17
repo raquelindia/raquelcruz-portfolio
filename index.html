@@ -29,7 +29,171 @@
        $scope.listColor = '#FB0EB0';
        $scope.valueColor = '#9C56E2';
        $scope.terminalGreen = '#24c642';
+       $scope.chaseCarouselCount = 0;
+       $scope.budgetingAppCarouselCount = 0;
+       $scope.inventoryAppCarouselCount = 0;
+       $scope.journalApiCarouselCount = 0;
+       $scope.workSocialAppCarouselCount = 1;
+       
+
+       //   carousel images 
+$scope.chaseCloneCarousel = [
+    {
+        image: "./projects-files/images/chase-clone-img.png",
+        caption: "Accounts"
+    },
+    {
+        image: "./projects-files/images/placeholder.png",
+        caption: "Plan & Track"
+    },
+    {
+        image: "./projects-files/images/chase-clone-img.png",
+        caption: "Investments"
+    },
+    {
+        image: "./projects-files/images/placeholder.png",
+        caption: "Security"
+    }
+];
+
+//budgeting app images 
+$scope.budgetingAppCarousel = [
+    {
+        image: "./projects-files/images/placeholder.png",
+        caption: "Overview"
+    },
+    {
+        image: "./projects-files/images/placeholder.png",
+        caption: "Budget"
+    },
+    {
+        image: "./projects-files/images/budgeting-tool-img.png",
+        caption: "Subscriptions"
+    },
+    {
+        image: "./projects-files/images/placeholder.png",
+        caption: "Security"
+    }
+];
+
+
+//inventory app carousel
+$scope.inventoryAppCarousel = [
+    {
+        image: "./projects-files/images/inventory-app.png",
+        caption: "Home page"
+    },
+    {
+        image: "./projects-files/images/placeholder.png",
+        caption: "placeholder"
+    },
+    {
+        image: "./projects-files/images/inventory-app.png",
+        caption: "Home page"
+    },
+    {
+        image: "./projects-files/images/placeholder.png",
+        caption: "Placeholder"
+    }
+];
+
+//work social carousel
+$scope.workSocialCarousel = [
+    {
+        image: "./projects-files/images/placeholder.png",
+        caption: "Overview 1"
+    },
+    {
+        image: "./projects-files/images/placeholder.png",
+        caption: "Budget"
+    },
+    {
+        image: "./projects-files/images/placeholder.png",
+        caption: "Subscriptions"
+    },
+    {
+        image: "./projects-files/images/placeholder.png",
+        caption: "Overview 2"
+    }
+];
+
+
+//journal api carousel
+$scope.journalApiCarousel = [
+    {
+        image: "./projects-files/images/journal-api.png",
+        caption: "Auth0 login"
+    },
+    {
+        image: "./projects-files/images/placeholder.png",
+        caption: "Budget"
+    },
+    {
+        image: "./projects-files/images/journal-api.png",
+        caption: "Subscriptions"
+    },
+    {
+        image: "./projects-files/images/budgeting-tool-img.png",
+        caption: "Overview"
+    }
+];
+
+//toggle inventory app carousel
+$scope.toggleInventoryAppCarousel = function () { 
+if( $scope.inventoryAppCarouselCount < $scope.inventoryAppCarousel.length - 1) {
+    $scope.inventoryAppCarouselCount = $scope.inventoryAppCarouselCount + 1;
+} else {
+    $scope.inventoryAppCarouselCount = 0;
+};
+};
+
+//toggle journal api carousel
+$scope.toggleJournalApiCarousel = function () {
+    if ( $scope.journalApiCarouselCount < $scope.journalApiCarousel.length - 1) {
+        $scope.journalApiCarouselCount = $scope.journalApiCarouselCount + 1;
+    } else {
+        $scope.journalApiCarouselCount = 0;
+    }
+};
+
+
+//toggle chase clone carousel 
+$scope.toggleChaseCarousel = function () {
+   if ( $scope.chaseCarouselCount < $scope.chaseCloneCarousel.length - 1) {
+        $scope.chaseCarouselCount = $scope.chaseCarouselCount + 1;
+   } else {
+    $scope.chaseCarouselCount = 0;
+   }
+};
   
+// toggle budgeting app carousel 
+
+$scope.toggleBudgetingAppCarousel = function () {
+   if ( $scope.budgetingAppCarouselCount < $scope.budgetingAppCarousel.length - 1) {
+    console.log($scope.budgetingAppCarouselCount);
+        $scope.budgetingAppCarouselCount = $scope.budgetingAppCarouselCount + 1;
+        console.log($scope.budgetingAppCarouselCount);
+        console.log($scope.budgetingAppCarousel[$scope.budgetingAppCarouselCount]);
+   } else {
+    console.log($scope.budgetingAppCarouselCount);
+    $scope.budgetingAppCarouselCount = 0;
+    console.log($scope.budgetingAppCarouselCount);
+   }
+};
+
+//toggle work social carousel
+$scope.toggleWorkSocialCarousel = function () {
+   if ( $scope.workSocialCarouselCount <  $scope.workSocialCarousel.length - 1) {
+    console.log($scope.workSocialAppCarouselCount);
+         $scope.workSocialCarouselCount = $scope.workSocialCarouselCount + 1;
+         console.log($scope.workSocialCarouselCount);
+         console.log($scope.workSocialCarousel[$scope.workSocialAppCarouselCount]);
+   } else {
+    $scope.workSocialCarouselCount = 0;
+    console.log($scope.workSocialCarousel[$scope.workSocialAppCarouselCount]);
+   };
+};
+
     });
     app.config(function($routeProvider){
         $routeProvider
