@@ -120,15 +120,15 @@ h1 {
 .image-titles {
     color: #24c624;
     font-family: 'bitwise-font';
-    font-size: 200%;
+    font-size: 150%;
     margin-top: 4%;
 }
 
 .captions {
-        color: rgb(255, 36, 36);
+        color: rgb(255, 88, 88);
         font-family: 'bitwise-font';
-        font-size: 200%;
-        margin-top: 4%;
+        font-size: 125%;
+        margin-top: 2%;
 }
 
 .material-symbols-outlined {
