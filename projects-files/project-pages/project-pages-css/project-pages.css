@@ -83,7 +83,7 @@ h1 {
 .challenges-desc {
     font-family: 'bitwise-font';
     font-size: 150%;
-    color: rgb(209, 164, 255);
+    color: rgb(128, 145, 255);
     margin-top: -6%;
     margin-bottom: 8%;
 }
@@ -108,6 +108,13 @@ h1 {
     font-family: 'bitwise-font';
     font-size: 150%;
     color: yellow;
+}
+.steps-desc {
+    margin-top: -6%;
+    margin-bottom: 8%;
+    font-family: 'bitwise-font';
+    font-size: 150%;
+    color: rgb(209, 164, 255);
 }
 
 .image-titles {
