@@ -20,6 +20,8 @@ h1 {
 .sections-titles {
     font-family: 'VT323';
     font-size: 400%;
+    margin-bottom: -0.5%;
+  
 }
 
 .first-img {
@@ -47,7 +49,7 @@ h1 {
     list-style: none;
     font-family: 'VT323';
     font-size: 300%;
-    margin-top: -4%;
+   
 }
 
 .criteria-list {
@@ -73,6 +75,19 @@ h1 {
     font-size: 300%;
 }
 
+.approach-subheadings {
+    font-family: 'VT323';
+    font-size: 300%;
+}
+
+.challenges-desc {
+    font-family: 'bitwise-font';
+    font-size: 150%;
+    color: rgb(209, 164, 255);
+    margin-top: -6%;
+    margin-bottom: 8%;
+}
+
 .projects-descriptions {
     /* color: #24c642; */
     color: cyan;
@@ -85,6 +100,14 @@ h1 {
     color: rgb(255, 38, 146);
     font-family: 'bitwise-font';
     font-size: 200%;
+}
+
+.approach-desc {
+    margin-top: 6%;
+    margin-bottom: 8%;
+    font-family: 'bitwise-font';
+    font-size: 150%;
+    color: yellow;
 }
 
 .image-titles {

@@ -63,6 +63,47 @@
 
 <div><hr class="line"></div>
 
+<div class="approach-div">
+    <div>
+    <div class="center-content"><h4 class="sections-titles">Approach</h4></div>
+    <div class="center-content"><p class="approach-desc">I decided to user AngularJS for this project because I use it in my currebt role and I thought it would be good practice.
+        Also, the testing framework usually used with AngularJS is Jasmine, and I have used Jasmine before so I already know how it works. AngularJS has directives so I used that for the components. 
+        I have a form on the budgets page and the subscriptions page to create new budgets and subscriptions.
+        In the Overview section, The number that you see at the top of the page is a sum of all the money thats been logged. I created sample data in the controller to test it out while I was making it.
+        The budgets section has components that show how much of your budget you've spent or if you are exceeding it. There is a bar in each one that changes colors from grey to green and then red and orange depending on how much you've spent. 
+        I shows you how much of your budget is left to spend. The subscriptions section shows which services you are currently subscribed to and how much they cost.
+    </p></div>
+    </div>
+
+    <div>
+        <div class="center-content"><h5>Steps Taken</h5></div>
+        <div class="center-content"><p class="steps-desc">The first thing I did in this project was figure out what features I wanted it to have.
+             I looked for examples of apps that already existed like this one. Tne mint app is very similar and it has a tab for an overview, budgets,
+            subscriptions, and a place to view your account. I didn't include a section to create an account because I didn't feel like I had enough time
+            to do that and meet all the criteria of the project. I started with the budgets section. For the sake of time, I didn't start this project using a database. I created arrays in the controller with 
+            data that I could use in the components while I did the styling and added functionality. The main function of the app is to show how much money you have spent, how much you have left, etc. so I needed something there to make sure the functions I
+            created for these things were working. After I did the styling and got everything looking how I wanted, I made sure the form worked correctly and then I created a directive for the budgets section. For each budget 
+            there is a box with the name of the budget, a bar that represents how much money was spent, a number that shows how much money is left and a button to delete that budget. 
+            After that I created a test for the directive using Jasmine. I have used Jasmine before, but I had never used it with Karma, which is a framework for Jasmine. The information I found online about using Jasmine with AngularJS says that you should use it with Karma 
+            because there is an easy way to test directives with it. For the life of me, I could not get it to work, and I was spending a lot of time trying, so I used Jasmine by itself. I ended up creating a test that adds two numbers to test if the test itself was working 
+            and then I tested some of the functions that I used for the form submission. After that was working, I created a directive for the subscriptions component and it was basically the same process. The last thing I added was a place to edit budgets. 
+        </p></div>
+    </div>
+
+    <div>
+        <div class="center-content"><h5 class="approach-subheadings">Challenges</h5></div>
+        <div class="center-content"><p class="challenges-desc">One thing I found challenging about this project was getting the directives working. I don't remember any errors showing up, and if there were they were not very informative, so it was hard to 
+            figure out what I was doing wrong. Another thing I did not anticipate was issues using different CSS frameworks along with AngularJS styling features. I used regular 
+            CSS, Tailwind, SASS, and the AngularJS ng-style directive. There were times where styles I was using weren't working as I expected and it was because the frameworks were conflicting with each other.
+            The biggest issue I had with this project was checking if my directives were working. In an AngularJS app, it does not save any data entered from a form when you click on another link, So I was able to add a budget to the list but I couldn't see it in the list when
+            I exited the form. At this point, it was almost time for me to submit the project, so I just made the form like a pop-up. I put the file that the form was in and the file the list of budgets was in on the same page using ng-include and then I changed which file was 
+            being displayed based on the value of a variable that would change on the click of the button that opens the forms.
+        </p></div>
+    </div>
+</div>
+
+<div><hr class="line"></div>
+
 </div>
     </body>
 </html>
