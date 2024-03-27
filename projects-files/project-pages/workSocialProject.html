@@ -5,52 +5,45 @@
         <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/project-pages.css">
     </head>
     <body>
-        <div class="">
+        <div class="container">
         <div class="w-full">
-            <div><h1 class="">Work Social</h1></div>
+            <div><h1>Work Social</h1></div>
         </div>
+
+        <div>
+            <div class="center-content"><img class="first-img" alt="placeholder stuff" src="{{ workSocialCarousel[workSocialCarouselCount].image }}"><button class="carousel-button"  ng-click="toggleWorkSocialCarousel()"><span class="material-symbols-outlined">arrow_forward_ios</span></button></div>
+            <div class="center-content"><h2 class="image-titles">{{  workSocialCarousel[workSocialCarouselCount].title }}</h2></div>
+            <div class="center-content"><p class="captions">{{ workSocialCarousel[workSocialCarouselCount].caption }}</p></div>
+        </div>
+
+        <div><hr class="line"></div>
+
+        <div class="links-div">
+            <div class="center-content"><a class="project-links" href="">Github Repository</a></div>
+            <div class="galaga-ship-file"  ng-include="'./home-files/animations/galaga-ship.html'"></div>
+            <div class="center-content" ><a class="project-links" href="">Deployed App</a></div>
+            </div>
+
         <div><hr class="line"></div>
         <div>
-            <div class="center-content"><p>g yfuytuyfvjgcjgcjvhg</p></div>
+            <div class="center-content"><p  class="projects-descriptions">g yfuytuyfvjgcjgcjvhg</p></div>
         </div>
 
         <div><hr class="line"></div>
 
         <div>
-            <div class="center-content"><img class="first-img" alt="placeholder stuff" src="{{ workSocialCarousel[workSocialCarouselCount].image }}"></div>
-            <div class="center-content"><p>{{ workSocialCarousel[workSocialCarouselCount].caption }}</p><span><button ng-click="toggleWorkSocialCarousel()">next</button></span></div>
-        </div>
-
-        <div class="center-content"><a href="">Github Repository</a></div>
-
-        <div>
-            <div class="center-content"><h2>Tech:</h2></div>
+            <div class="center-content"><h2 class="sections-titles">Tech:</h2></div>
             <div class="center-content">
-            <ul>
-                <li>Express</li>
-                <li>Sqlite3</li>
-                <li>Sequelize</li>
+            <ul class="tech-stack-list">
+                <li>EXPRESS</li>
+                <li style="color: #0082cb">SQLITE3</li>
+                <li style="color: #ff7d26">SEQUELIZE</li>
             </ul>
             </div>
         </div>
 
-        <div><hr class="line"></div>
-        
-<div>
-    <div class="center-content"><h2>Project Lifecycle</h2></div>
-    <div class="center-content">The lifecycle for this project was waterfall. 
-        We ended up building everything and then testing it.
-    </div>
-</div>
-
 <div><hr class="line"></div>
 
-<div>
-    <div class="center-content"><h2>Roles</h2></div>
-    <div class="center-content"><p>For this project, I did the Sequelize models</p></div>
-</div>
-
-<div><hr class="line"></div>
 
         </div>
     </body>

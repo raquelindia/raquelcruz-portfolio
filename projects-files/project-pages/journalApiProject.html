@@ -5,12 +5,26 @@
         <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/project-pages.css">
     </head>
     <body>
+        <div class="container">
         <div>
             <div><h1>Journal API</h1></div>
         </div>
+
+        <div>
+            <div class="center-content"><img class="first-img" alt="Screenshot of Auth0 login" src="{{ journalApiCarousel[journalApiCarouselCount].image  }}"><button class="carousel-button" ng-click="toggleJournalApiCarousel()"><span class="material-symbols-outlined">arrow_forward_ios</span></button></div>
+            <div class="center-content"><h2 class="image-titles">{{  journalApiCarousel[journalApiCarouselCount].title }}</h2></div>
+            <div class="center-content"><p class="captions">{{ journalApiCarousel[journalApiCarouselCount].caption }}</p></div>
+        </div>
+
+        <div><hr class="line"></div>
+    <div class="links-div">
+        <div class="center-content"><a class="project-links" href="https://github.com/raquelindia/journal-api">Github Repository</a></div>
+        <div  class="galaga-ship-file" ng-include="'./home-files/animations/galaga-ship.html'"></div>
+        <div class="center-content"><a class="project-links" href="https://dev-wmyn6dpovcmdzz3o.us.auth0.com/u/login?state=hKFo2SA3WWJqc0M0UjVFMWhWdzBYYko2dklLOFF4VFh2RkN1c6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIEZ3M1NuV1hrZFRqODVEQ0dEWGl4S1BVMHlmVlVwV0R6o2NpZNkgQ3ViSHNyRXR4cWk0N2Rncnh1b2RwRGF0T1VTellraVk">Deployed App</a></div>
+    </div>
         <div><hr class="line"></div>
         <div>
-            <div class="center-content"><p>This is an API I created.
+            <div class="center-content"><p class="projects-descriptions">This is an API I created.
                  A user can create, read, update, or delete entries in a journal. 
                  An admin can view all entries from every journal, and create, update or delete them.</p></div>
         </div>
@@ -18,38 +32,15 @@
         <div><hr class="line"></div>
 
         <div>
-            <div class="center-content"><img class="first-img" alt="Screenshot of Auth0 login" src="{{ journalApiCarousel[journalApiCarouselCount].image  }}"></div>
-            <div class="center-content"><p>{{ journalApiCarousel[journalApiCarouselCount].caption }}</p><span><button ng-click="toggleJournalApiCarousel()">next</button></span></div>
-        </div>
-
-        <div class="center-content"><a href="">Github Repository</a></div>
-
-        <div>
-            <div class="center-content"><h2>Tech:</h2></div>
+            <div class="center-content"><h2 class="sections-titles">Tech:</h2></div>
             <div class="center-content">
-            <ul>
-                <li>SqLite3</li>
-                <li>Auth0</li>
-                <li>Express</li>
-                <li>Postman</li>
+            <ul class="tech-stack-list">
+                <li style="color: #0082cb">SQLITE3</li>
+                <li style="color: yellow">AUTH0</li>
+                <li>EXPRESS</li>
+                <li style="color: orange">POSTMAN</li>
             </ul>
             </div>
-        </div>
-
-        <div><hr class="line"></div>
-
-        <div>
-            <div class="center-content"><h2>Project Lifecycle</h2></div>
-            <div class="center-content"><p>The lifecycle for this project was agile.
-                 I continuously tested everything out as I was going, using Postman.</p>
-            </div>
-        </div>
-
-        <div><hr class="line"></div>
-
-        <div>
-            <div class="center-content"><h2>Roles</h2></div>
-            <div class="center-content"><p>This was a solo project.</p></div>
         </div>
 
         <div><hr class="line"></div>

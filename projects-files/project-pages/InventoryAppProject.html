@@ -5,54 +5,43 @@
         <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/project-pages.css">
     </head>
     <body>
+        <div class="container">
         <div>
             <div><h1>Inventory App</h1></div>
         </div>
-        <div><hr class="line"></div>
-        <div>
-            <div class="center-content"><p>This is a project I worked on with a group</p></div>
-        </div>
-
-        <div><hr class="line"></div>
 
         <div>
-            <div class="center-content"><img class="first-img" alt="Screenshot of Inventory App" src="{{ inventoryAppCarousel[inventoryAppCarouselCount].image  }}"></div>
-            <div class="center-content"><p>{{  inventoryAppCarousel[inventoryAppCarouselCount].caption }}</p><span><button ng-click="toggleInventoryAppCarousel()">next</button></span></div>
+            <div class="center-content"><img class="first-img" alt="Screenshot of Inventory App" src="{{ inventoryAppCarousel[inventoryAppCarouselCount].image  }}"><button class="carousel-button" ng-click="toggleInventoryAppCarousel()"><span class="material-symbols-outlined">arrow_forward_ios</span></button></div>
+            <div class="center-content"><h2 class="image-titles">{{   inventoryAppCarousel[inventoryAppCarouselCount].title }}</h2></div>
+            <div class="center-content"><p class="captions">{{  inventoryAppCarousel[inventoryAppCarouselCount].caption }}</p></div>
         </div>
         
-        <div class="center-content"><a href="">Github Repository</a></div>
+
+        <div><hr class="line"></div>
+        <div class="links-div">
+            <div class="center-content"><a class="project-links" href="">Github Repository</a></div>
+            <div class="galaga-ship-file"  ng-include="'./home-files/animations/galaga-ship.html'"></div>
+            <div class="center-content" ><a class="project-links" href="">Deployed App</a></div>
+            </div>
+        <div><hr class="line"></div>
+        <div>
+            <div class="center-content"><p class="projects-descriptions">This is a project I worked on with a group. It is a CRUD app. A user can create, view, edit or delete each item in the inventory.</p></div>
+        </div>
+
+        <div><hr class="line"></div>
 
         <div>
-            <div class="center-content"><h2>Tech:</h2></div>
+            <div class="center-content"><h2 class="sections-titles">Tech:</h2></div>
             <div class="center-content">
-            <ul>
-                <li>React</li>
+            <ul class="tech-stack-list">
+                <li style="color: red">REACT</li>
                 <li></li>
                 <li></li>
             </ul>
             </div>
         </div>
         <div><hr class="line"></div>
-
-        <div>
-            <div class="center-content"><h2>Project Lifecycle</h2></div>
-            <div class="center-content"><p>The lifecycle for this project was waterfall. 
-                We ended up building everything and then testing it.</p>
-            </div>
-        </div>
-
-        <div><hr class="line"></div>
-
-        <div>
-            <div class="center-content"><h2>Roles</h2></div>
-            <div class="center-content"><p>I created the wireframes for this 
-                project and did some of the CSS.</p></div>
-        </div>
-
-        <div><hr class="line"></div>
             
-
-        <div></div>
         </div>
     </body>
 </html>

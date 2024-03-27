@@ -5,13 +5,27 @@
         <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/project-pages.css">
     </head>
     <body>
-<div>
+<div class="container">
 <div>
     <div><h1>Budget App</h1></div>
 </div>
+<div>
+    <div class="center-content"><img class="first-img" alt="Screenshot of Overview page" src="{{ budgetingAppCarousel[budgetingAppCarouselCount].image }}"><button class="carousel-button" ng-click="toggleBudgetingAppCarousel()"><span class="material-symbols-outlined">arrow_forward_ios</span></button></div>
+    <div class="center-content"><h2 class="image-titles">{{   budgetingAppCarousel[budgetingAppCarouselCount].title }}</h2></div>
+    <div class="center-content"><p class="captions">{{  budgetingAppCarousel[budgetingAppCarouselCount].caption }}</p></div>
+</div>
+
+<div><hr class="line"></div>
+
+<div class="links-div">
+<div class="center-content"><a class="project-links" href="">Github Repository</a></div>
+<div class="galaga-ship-file"  ng-include="'./home-files/animations/galaga-ship.html'"></div>
+<div class="center-content" ><a class="project-links" href="">Deployed App</a></div>
+</div>
+
 <div><hr class="line"></div>
 <div>
-    <div class="center-content"><p>This is a budgeting tool that I created. It has an overview tab,
+    <div class="center-content"><p class="projects-descriptions">This is a budgeting tool that I created. It has an overview tab,
         a tab for budgets, and a tab to track subscriptions. 
         A user can edit and delete budgets and subscriptions. 
        It will also show if a user is going over the set amount for each budget, or if they are about to.</p></div>
@@ -20,53 +34,18 @@
 <div><hr class="line"></div>
 
 <div>
-    <div class="center-content"><img class="first-img" alt="Screenshot of Overview page" src="{{ budgetingAppCarousel[budgetingAppCarouselCount].image }}"></div>
-    <div class="center-content"><p>{{  budgetingAppCarousel[budgetingAppCarouselCount].caption }}</p><span><button ng-click="toggleBudgetingAppCarousel()">next</button></span></div>
-</div>
-
-<div class="center-content"><a href="">Github Repository</a></div>
-
-<div>
-    <div class="center-content"><h2>Tech:</h2></div>
+    <div class="center-content"><h2 class="sections-titles">Tech:</h2></div>
     <div class="center-content">
-    <ul>
-        <li>AngularJS</li>
-        <li>Tailwind</li>
-        <li>SASS</li>
-        <li>Jasmine</li>
+    <ul class="tech-stack-list">
+        <li style="color: red">ANGULARJS</li>
+        <li style="color: #9C56E2">SASS</li>
+        <li style="color: #89CFF0">TAILWIND</li>
+        <li style="color: violet">JASMINE</li>
     </ul>
     </div>
 </div>
 
 <div><hr class="line"></div>
-
-<div>
-    <div class="center-content"><h2>Project Lifecycle</h2></div>
-    <div class="center-content"><p>The lifecycle for this project was agile.
-         I created some tests for some of the functions 
-         before I continued with the other stuff.</p>
-    </div>
-</div>
-
-<div><hr class="line"></div>
-
-<div>
-    <div class="center-content"><h2>Roles</h2></div>
-    <div class="center-content"><p>This was a solo project.</p></div>
-</div>
-
-<div><hr class="line"></div>
-
-<div>
-    <div><h3>Unit tests</h3></div>
-    <div>
-        <p>
-            For this projext I used Jasmine to test the components. 
-        </p>
-    </div>
-</div>
-
-
 
 </div>
     </body>

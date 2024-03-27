@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/portfolio-styles.css">
     <title>Raquel Cruz | Software Engineer</title>
 </head>
@@ -40,18 +41,25 @@
 $scope.chaseCloneCarousel = [
     {
         image: "./projects-files/images/chase-clone-img.png",
-        caption: "Accounts"
+        title: "Accounts Page",
+        caption: `This is the Accounts page. I worked on this page first. 
+        I think this was the most challenging part. Figuring out all colors and 
+        copying the styles exactly was tedious, but it is consistent throughout the Chase website 
+        so the other pages were much easier.`
     },
     {
         image: "./projects-files/images/placeholder.png",
+        title: "Plan & Track",
         caption: "Plan & Track"
     },
     {
         image: "./projects-files/images/chase-clone-img.png",
+        title: "Investments",
         caption: "Investments"
     },
     {
         image: "./projects-files/images/placeholder.png",
+        title: "Security",
         caption: "Security"
     }
 ];
@@ -60,19 +68,21 @@ $scope.chaseCloneCarousel = [
 $scope.budgetingAppCarousel = [
     {
         image: "./projects-files/images/placeholder.png",
-        caption: "Overview"
+        title: "Overview",
+        caption: `This is the Overview. I used SASS to do the
+         sliding animation and the glow when you hover over some of the components.`
     },
     {
         image: "./projects-files/images/placeholder.png",
-        caption: "Budget"
+        title: "Budget Feature",
+        caption: `This is the Budget feature. 
+        I used AngularJS so I made a reuasable component to display each budget the user creates.`
     },
     {
         image: "./projects-files/images/budgeting-tool-img.png",
-        caption: "Subscriptions"
-    },
-    {
-        image: "./projects-files/images/placeholder.png",
-        caption: "Security"
+        title: "Subscriptions Section",
+        caption: `This is the Subscriptions section. I wanted this project to be something like the Mint app,
+        so I included this.`
     }
 ];
 
@@ -81,18 +91,25 @@ $scope.budgetingAppCarousel = [
 $scope.inventoryAppCarousel = [
     {
         image: "./projects-files/images/inventory-app.png",
-        caption: "Home page"
+        title: "Home Page",
+        caption: `This is the home page of our app. 
+        I looked on google for ideas for color schemes. `
     },
     {
         image: "./projects-files/images/placeholder.png",
-        caption: "placeholder"
+        title: "Home Page",
+        caption: `Once I picked a color scheme that everyone liked, I created a wireframe
+        and made a list of all the colors and styles because there was one other person working
+        on the frontend with me`
     },
     {
         image: "./projects-files/images/inventory-app.png",
-        caption: "Home page"
+        title: "Individual Item",
+        caption: `This is a CRUD app so each individual item can be edited or deleted.`
     },
     {
         image: "./projects-files/images/placeholder.png",
+        title: "Individual Item",
         caption: "Placeholder"
     }
 ];
@@ -101,18 +118,22 @@ $scope.inventoryAppCarousel = [
 $scope.workSocialCarousel = [
     {
         image: "./projects-files/images/placeholder.png",
+        title: "Placeholder",
         caption: "Overview 1"
     },
     {
         image: "./projects-files/images/placeholder.png",
+        title: "Placeholder",
         caption: "Budget"
     },
     {
         image: "./projects-files/images/placeholder.png",
+        title: "Placeholder",
         caption: "Subscriptions"
     },
     {
         image: "./projects-files/images/placeholder.png",
+        title: "Placeholder",
         caption: "Overview 2"
     }
 ];
@@ -122,19 +143,31 @@ $scope.workSocialCarousel = [
 $scope.journalApiCarousel = [
     {
         image: "./projects-files/images/journal-api.png",
-        caption: "Auth0 login"
+        title: "Auth0 Login",
+        caption: `This the Auth0 login. A user can log in with their google email. 
+        I didn't want to save passwords, so It doesn't store passwords. 
+        You log in with your email through Auth0, and then it checks if your username is saved in the database`
     },
     {
         image: "./projects-files/images/placeholder.png",
-        caption: "Budget"
+        title: "Journal Entries",
+        caption: `Once a user is logged in they can view all of their journal entries at once
+        or individually.`
     },
     {
         image: "./projects-files/images/journal-api.png",
-        caption: "Subscriptions"
+        title: "Journal Entries",
+        caption: "They can create a new journal entry or update or delete an existing one."
     },
     {
         image: "./projects-files/images/budgeting-tool-img.png",
-        caption: "Overview"
+        title: "Profile",
+        caption: "You can also view your profile information by going to this page."
+    },
+    {
+        image: "./projects-files/images/budgeting-tool-img.png",
+        title: "Log Out Screen",
+        caption: "After a user logs out it takes you to this page."
     }
 ];
 
@@ -174,7 +207,7 @@ $scope.toggleBudgetingAppCarousel = function () {
         $scope.budgetingAppCarouselCount = $scope.budgetingAppCarouselCount + 1;
         console.log($scope.budgetingAppCarouselCount);
         console.log($scope.budgetingAppCarousel[$scope.budgetingAppCarouselCount]);
-   } else {
+   } else {  
     console.log($scope.budgetingAppCarouselCount);
     $scope.budgetingAppCarouselCount = 0;
     console.log($scope.budgetingAppCarouselCount);

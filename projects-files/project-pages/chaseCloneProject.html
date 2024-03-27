@@ -5,48 +5,49 @@
         <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/project-pages.css">
     </head>
     <body>
+        <div class="container">
         <div>
             <div><h1>Chase Clone</h1></div>
         </div>
-        <div class="center-content"><hr class="line"></div>
+ 
         <div>
-            <div><p>This is a front-end project I did with a coworker. It is a clone of thee Chase website.
+            <div class="center-content"><img class="first-img" alt="Screenshot of Accounts page" src="{{chaseCloneCarousel[chaseCarouselCount].image}}"><button class="carousel-button" ng-click="toggleChaseCarousel()"><span class="material-symbols-outlined">arrow_forward_ios</span></button></div>
+            <div class="center-content"><h2 class="image-titles">{{   chaseCloneCarousel[chaseCarouselCount].title  }}</h2></div>
+            <div class="center-content"><p class="captions">{{ chaseCloneCarousel[chaseCarouselCount].caption }}</p></div>
+        </div>
+
+        <div><hr class="line"></div>
+
+        <div class="links-div">
+            <div class="center-content"><a class="project-links" href="">Github Repository</a></div>
+            <div class="galaga-ship-file"  ng-include="'./home-files/animations/galaga-ship.html'"></div>
+            <div class="center-content" ><a class="project-links" href="">Deployed App</a></div>
+            </div>
+        <div><hr class="line"></div>
+        <div>
+            <div class="center-content"><p class="projects-descriptions">This is a front-end project I did with a coworker. It is a clone of thee Chase website.
                  I did the Accounts page, the Pay & Transfer pages, and the Plan & Track page. </p></div>
         </div>
 
         <div><hr class="line"></div>
 
-        <div>
-            <div class="center-content"><img class="first-img" alt="Screenshot of Accounts page" src="{{chaseCloneCarousel[chaseCarouselCount].image}}"></div>
-            <div class="center-content"><p>{{ chaseCloneCarousel[chaseCarouselCount].caption}}</p><span><button ng-click="toggleChaseCarousel()">next</button></span></div>
-        </div>
-
-        <div class="center-content"><a href="">Github Repository</a></div>
 
         <div>
-            <div class="center-content"><h2>Tech:</h2></div>
+            <div class="center-content"><h2 class="sections-titles">Tech:</h2></div>
             <div class="center-content">
-            <ul>
-                <li>AngularJS</li>
-                <li>Jasmine</li>
-                <li>Tailwind</li>
+            <ul class="tech-stack-list">
+                <li style="color: red">ANGULARJS</li>
+                <li style="color: violet">JASMINE</li>
+                <li style="color: #89CFF0">TAILWIND</li>
             </ul>
             </div>
         </div>
-<div><hr class="line"></div>
-
-<div>
-    <div class="center-content"><h2>Project Lifecycle</h2>></div>
-    <div class="center-content"><p>The lifecycle for this project was waterfall. 
-        We ended up building everything and then testing it.</p>
-    </div>
-</div>
 
 <div><hr class="line"></div>
 
 <div>
-    <div class="center-content"><h2>Roles</h2></div>
-    <div class="center-content"><p>I worked on this with a coworker so 
+    <div class="center-content"><h2 class="sections-titles">Roles</h2></div>
+    <div class="center-content"><p class="projects-descriptions">I worked on this with a coworker so 
         we tried to split the work up evenly. I did the Accounts page, 
         Plan and Track pages, and the tests, and a Johnny did the 
         Investments page and the Security page. </p></div>
@@ -55,14 +56,6 @@
 <div><hr class="line"></div>
 
 
-<div>
-    <div><h3>Unit tests</h3></div>
-    <div>
-        <p>
-            For this projext I used Jasmine to test the components. 
-        </p>
-    </div>
-</div>
 
 
         </div>
