@@ -97,3 +97,10 @@ h1 {
 .galaga-ship-file {
     margin-top: -1%;
 }
+
+@media (max-width: 576px) {
+    .first-img {
+        width: 300px;
+        height: 300px;
+    }
+}
