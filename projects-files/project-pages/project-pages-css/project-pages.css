@@ -103,4 +103,8 @@ h1 {
         width: 300px;
         height: 300px;
     }
+    .project-links {
+        font-size: 126%;
+        margin-top: 10%;
+    }
 }
