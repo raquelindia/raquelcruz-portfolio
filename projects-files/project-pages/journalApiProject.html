@@ -23,24 +23,66 @@
         <div class="center-content"><a class="project-links" href="https://journal-api-gu31.onrender.com/home ">Deployed App</a></div>
     </div>
         <div><hr class="line"></div>
-        <div>
-            <div class="center-content"><p class="projects-descriptions">This is an API I created.
-                 A user can create, read, update, or delete entries in a journal. 
-                 An admin can view all entries from every journal, and create, update or delete them.</p></div>
-        </div>
-
-        <div><hr class="line"></div>
 
         <div>
             <div class="center-content"><h2 class="sections-titles">Tech:</h2></div>
             <div class="center-content">
             <ul class="tech-stack-list">
                 <li style="color: #0082cb">SQLITE3</li>
+                <li style="color: #ff7d26">SEQUELIZE</li>
                 <li style="color: yellow">AUTH0</li>
                 <li>EXPRESS</li>
+                <li style="color: yellow">JEST</li>
                 <li style="color: orange">POSTMAN</li>
+                <li style="color: rgb(184, 73, 184)">RENDER</li>
             </ul>
             </div>
+        </div>
+
+        <div><hr class="line"></div>
+        <div>
+            <div class="center-content"><h3 class="sections-titles">Objective</h3></div>
+            <div class="center-content"><p class="objectives-descriptions">This is a project for Multiverse. The objective
+                was to create an API with a login.
+            </p></div>
+            <div class="center-content"><p class="criteria-heading">Criteria:</p></div>
+            <ol class="criteria-list">
+                <li class="criteria-list-items"><b class="bold-text">MVP Application and REST: </b>A user should be able to log in to a deployed app and create, read update and delete from the database by accessing RESTful routes.</li>
+                <li class="criteria-list-items"><b class="bold-text">Login and Hashing: </b>A user should be able to login to my API and any saved passwords are hashed and salted before saved to the database. (note: If you use OAuth, you might not even store passwords at all.)</li>
+                <li class="criteria-list-items"><b class="bold-text">Register: </b>A user should be able to sign up for the API and be granted authorization to access the API.</li>
+                <li class="criteria-list-items"><b class="bold-text">Authorization: </b>A users API shouldbe protected from unauthorized users. An unauthorized user should see a message saying they do not have access to the API. A user should not be able to create new entities without logging in. A user data should only be accessible, editable, and deleteable by the user.</li>
+                <li class="criteria-list-items"><b class="bold-text">Associated Data: </b>A user should be able to read a single entry, see the associated user info and other associated data.</li>
+                <li class="criteria-list-items"><b class="bold-text">Admin vs. User: </b> An admin should have special super-user account type that allows access to content users don't have access to. A basic user should only see their own entries. An admin should be able to see all entries and regardless of user and edit other users information via the API.</li>
+            </ol>
+        </div>
+        <div><hr class="line"></div>
+
+        <div class="approach-div">
+            <div>
+            <div class="center-content"><h4 class="sections-titles">Approach</h4></div>
+            <div class="center-content"><p class="approach-desc">For this project I used Auth0 for the login as opposed to saving and hashing paswords. I used Auth0s log in with Google feature. 
+                My API checks the SQLite3 database for an email that matches the one you logged in with and displays your profile information and will only allow you to see entries associated with that email.</p></div>
+                </div>
+
+                <div>
+                    <div class="center-content"><h5 class="approach-subheadings">Steps Taken</h5></div>
+                    <div class="center-content"><p class="steps-desc">I started this project by looking for examples of other APIs and looking at the work we had done in the weeks prior, because even though we spent a few weeks learning about them, I still felt 
+                        like I didn't understand all the things that go into creating one. I don't think I had any examples of my own that worked completely. All the little projects we had done with APIs, I could only get to 'kind of' work. 
+                        I started with doing the parts that I was confident that I could do correctly. I picked journal entries for my API because I didn't want to overcomplicate things knowing I really 
+                        didn't know what I was doing yet. The first thing I did was create the Sequelize models and then I started working on the database. I think I had used the wrong database at first and I had to start over a few times. I created a file with seed data 
+                        and then started working on seeding the database. At one point I had gotten it working and then somehow it dropped all the data. There was another point where it kept duplicating everything in the database. 
+                        I had a hard time getting Auth0 working, but seeding the database was definitely the most excruciating part of the project. After I was done with everything I tested the 
+                        Sequelize models using Jest.
+                    </p></div>
+                </div>
+
+                <div>
+                <div class="center-content"><h5 class="approach-subheadings">Challenges</h5></div>
+                <div class="center-content"><p class="challenges-desc">I struggled with this project because I did everything on my own, so I spent a lot of time troubleshooting.
+                    Getting Auth0 set up was tricky and it took up the majority of the time I spent working on this. Another thing that was a challenge for me was getting the SQLite3 database set up. 
+                    For a while I was having trouble seeding the database. I had to find examples of similar projects to reference to figure out how to make it work the way I intended.
+                </p></div>
+                </div>
         </div>
 
         <div><hr class="line"></div>
