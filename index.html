@@ -34,7 +34,7 @@
        $scope.budgetingAppCarouselCount = 0;
        $scope.inventoryAppCarouselCount = 0;
        $scope.journalApiCarouselCount = 0;
-       $scope.workSocialAppCarouselCount = 1;
+       $scope.workSocialCarouselCount = 0;
        
 
        //   carousel images 
@@ -112,14 +112,14 @@ $scope.inventoryAppCarousel = [
 //work social carousel
 $scope.workSocialCarousel = [
     {
-        image: "./projects-files/images/placeholder.png",
-        title: "Placeholder",
-        caption: "Overview 1"
+        image: "./projects-files/images/mars-weather-app.png",
+        title: "First section",
+        caption: "The top of the page is the most current update of the weather on Mars."
     },
     {
-        image: "./projects-files/images/placeholder.png",
-        title: "Placeholder",
-        caption: "Budget"
+        image: "./projects-files/images/mars-weather-previous.png",
+        title: "Past seven days",
+        caption: "This is the weather on Mars from the past seven days."
     },
     {
         image: "./projects-files/images/placeholder.png",
@@ -222,7 +222,7 @@ $scope.toggleBudgetingAppCarousel = function () {
 //toggle work social carousel
 $scope.toggleWorkSocialCarousel = function () {
    if ( $scope.workSocialCarouselCount <  $scope.workSocialCarousel.length - 1) {
-    console.log($scope.workSocialAppCarouselCount);
+    console.log($scope.workSocialCarouselCount);
          $scope.workSocialCarouselCount = $scope.workSocialCarouselCount + 1;
          console.log($scope.workSocialCarouselCount);
          console.log($scope.workSocialCarousel[$scope.workSocialAppCarouselCount]);
@@ -267,8 +267,8 @@ $scope.toggleWorkSocialCarousel = function () {
             templateUrl : "journalapi.html",
             controller: 'portfolioController'
         })
-        .when("/worksocialproject", {
-            templateUrl : "worksocial.html",
+        .when("/marsweatherappproject", {
+            templateUrl : "marsweatherapp.html",
             controller: 'portfolioController'
         });
     });
