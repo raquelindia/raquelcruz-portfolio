@@ -34,7 +34,7 @@
        $scope.budgetingAppCarouselCount = 0;
        $scope.inventoryAppCarouselCount = 0;
        $scope.journalApiCarouselCount = 0;
-       $scope.workSocialCarouselCount = 0;
+       $scope.marsWeatherAppCarouselCount = 0;
        
 
        //   carousel images 
@@ -110,7 +110,7 @@ $scope.inventoryAppCarousel = [
 ];
 
 //work social carousel
-$scope.workSocialCarousel = [
+$scope.marsWeatherAppCarousel = [
     {
         image: "./projects-files/images/mars-weather-app.png",
         title: "First section",
@@ -120,16 +120,6 @@ $scope.workSocialCarousel = [
         image: "./projects-files/images/mars-weather-previous.png",
         title: "Past seven days",
         caption: "This is the weather on Mars from the past seven days."
-    },
-    {
-        image: "./projects-files/images/placeholder.png",
-        title: "Placeholder",
-        caption: "Subscriptions"
-    },
-    {
-        image: "./projects-files/images/placeholder.png",
-        title: "Placeholder",
-        caption: "Overview 2"
     }
 ];
 
@@ -220,15 +210,15 @@ $scope.toggleBudgetingAppCarousel = function () {
 };
 
 //toggle work social carousel
-$scope.toggleWorkSocialCarousel = function () {
-   if ( $scope.workSocialCarouselCount <  $scope.workSocialCarousel.length - 1) {
+$scope.toggleMarsWeatherAppCarousel = function () {
+   if ( $scope.marsWeatherAppCarouselCount <  $scope.marsWeatherAppCarousel.length - 1) {
     console.log($scope.workSocialCarouselCount);
-         $scope.workSocialCarouselCount = $scope.workSocialCarouselCount + 1;
-         console.log($scope.workSocialCarouselCount);
-         console.log($scope.workSocialCarousel[$scope.workSocialAppCarouselCount]);
+         $scope.marsWeatherAppCarouselCount = $scope.marsWeatherAppCarouselCount + 1;
+         console.log($scope.marsWeatherAppCarouselCount);
+         console.log($scope.marsWeatherAppCarousel[$scope.marsWeatherAppCarouselCount]);
    } else {
-    $scope.workSocialCarouselCount = 0;
-    console.log($scope.workSocialCarousel[$scope.workSocialAppCarouselCount]);
+    $scope.marsWeatherAppCarouselCount = 0;
+    console.log($scope.marsWeatherAppCarousel[$scope.marsWeatherAppCarouselCount]);
    };
 };
 
