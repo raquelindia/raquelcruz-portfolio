@@ -13,15 +13,12 @@
 
 <body>
     
-
- <div class="starry-night"> 
     <div ng-app="portfolioApp" ng-controller="portfolioController">
         <nav>
          <div ng-include="'nav.html'"></div>
          </nav>
-
+         <div id="background-file" ng-include="'./background-file.html'"></div>
   <div id="index" ng-view></div>
-</div>
 </div>
 <script>
     var app = angular.module("portfolioApp", ["ngRoute"]);
