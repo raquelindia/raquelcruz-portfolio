@@ -84,7 +84,16 @@ h1 {
     font-family: 'bitwise-font';
     font-size: 150%;
     color: rgb(128, 145, 255);
-    margin-top: -6%;
+    margin-top: 6%;
+    margin-bottom: 8%;
+}
+
+
+.summary-desc {
+    font-family: 'bitwise-font';
+    font-size: 150%;
+    color: rgb(77, 255, 110);
+    margin-top: 6%;
     margin-bottom: 8%;
 }
 
@@ -110,12 +119,13 @@ h1 {
     color: yellow;
 }
 .steps-desc {
-    margin-top: -6%;
+    margin-top: 6%;
     margin-bottom: 8%;
     font-family: 'bitwise-font';
     font-size: 150%;
     color: rgb(209, 164, 255);
 }
+
 
 .image-titles {
     color: #24c624;
