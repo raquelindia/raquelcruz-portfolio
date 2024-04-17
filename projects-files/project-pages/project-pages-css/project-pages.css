@@ -6,7 +6,7 @@
     height: 1px;
     background-color:  rgb(156, 86, 226);
     border:rgb(156, 86, 226);
-    width: 80%;
+    width: 100%;
 }
 
 h1 {
@@ -15,6 +15,14 @@ h1 {
     font-family: 'VT323';
     font-size: 300%;
     margin-bottom: 6%;
+}
+
+.sections {
+    background-color: black;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+
 }
 
 .sections-titles {
@@ -28,6 +36,7 @@ h1 {
     width: 500px;
     height: 500px;
     border: 3px solid white;
+    margin-top: 4%;
 }
 
 .center-content {
@@ -57,15 +66,12 @@ h1 {
     font-size: 200%;
     margin-top: -4%;
     margin-bottom: 8%;
-    margin-left: 6%;
-    margin-right: 6%;
     color: violet;
 }
 
 .criteria-list-items {
     margin-bottom: 2%;
     font-family: 'HelveticaNeue-Thin';
-    margin-left: 4%;
 
 }
 
@@ -162,6 +168,7 @@ h1 {
  background: none;
  border: 3px solid white;
  border-left: none;
+ margin-top: 4%;
 }
 
 .links-div {
@@ -169,6 +176,8 @@ h1 {
     justify-content: space-around;
     margin-top: 3%;
     margin-bottom: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
 .galaga-ship-file {
