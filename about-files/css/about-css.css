@@ -2,6 +2,10 @@
     font-family: 'VT323';
     src: url('VT323/VT323-Regular.ttf') format('truetype');
 }
+
+body {
+    font-family: 'HelveticaNeue-Thin';
+}
 #parent-1 {
     display: flex;
     flex-direction: row;
@@ -23,7 +27,9 @@
     width: 480px;
     margin-top: -8%;
     height: 88%;
-    border: 3px solid white;
+    border: 1px solid white;
+    border-right: none;
+    border-left: none;
    
     
 }
@@ -61,7 +67,7 @@
 }
 
 .line {
-    height: 2px;
+    height: 1px;
     background-color:  rgb(156, 86, 226);
     border:rgb(156, 86, 226);
 
@@ -76,7 +82,7 @@
     height: 75%;
     background-color: black;
     margin-bottom: 10%;
-    font-family: bitwise-font;
+    font-family: 'HelveticaNeue-Thin';
     color: #24c642;
     font-size: 110%;
    

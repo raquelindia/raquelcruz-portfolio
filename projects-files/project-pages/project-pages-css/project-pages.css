@@ -3,7 +3,7 @@
 }
 
 .line {
-    height: 2px;
+    height: 1px;
     background-color:  rgb(156, 86, 226);
     border:rgb(156, 86, 226);
     width: 80%;
@@ -64,6 +64,9 @@ h1 {
 
 .criteria-list-items {
     margin-bottom: 2%;
+    font-family: 'HelveticaNeue-Thin';
+    margin-left: 4%;
+
 }
 
 .bold-text {
@@ -72,7 +75,10 @@ h1 {
 
 .criteria-heading {
     font-family: 'VT323';
-    font-size: 300%;
+    font-size: 400%;
+    font-weight: 700;
+    margin-bottom: 10%;
+
 }
 
 .approach-subheadings {
@@ -81,7 +87,7 @@ h1 {
 }
 
 .challenges-desc {
-    font-family: 'bitwise-font';
+    font-family: 'HelveticaNeue-Thin';
     font-size: 150%;
     color: rgb(128, 145, 255);
     margin-top: 6%;
@@ -90,7 +96,7 @@ h1 {
 
 
 .summary-desc {
-    font-family: 'bitwise-font';
+    font-family: 'HelveticaNeue-Thin';
     font-size: 150%;
     color: rgb(77, 255, 110);
     margin-top: 6%;
@@ -100,28 +106,28 @@ h1 {
 .projects-descriptions {
     /* color: #24c642; */
     color: cyan;
-    font-family: 'bitwise-font';
+    font-family: 'HelveticaNeue-Thin';
     font-size: 200%;
 }
 
 .objectives-descriptions {
     /* color: #24c642; */
     color: rgb(255, 38, 146);
-    font-family: 'bitwise-font';
+    font-family: 'HelveticaNeue-Thin';
     font-size: 200%;
 }
 
 .approach-desc {
     margin-top: 6%;
     margin-bottom: 8%;
-    font-family: 'bitwise-font';
+    font-family: 'HelveticaNeue-Thin';
     font-size: 150%;
     color: yellow;
 }
 .steps-desc {
     margin-top: 6%;
     margin-bottom: 8%;
-    font-family: 'bitwise-font';
+    font-family: 'HelveticaNeue-Thin';
     font-size: 150%;
     color: rgb(209, 164, 255);
 }
@@ -129,16 +135,17 @@ h1 {
 
 .image-titles {
     color: #24c624;
-    font-family: 'bitwise-font';
+    font-family: 'HelveticaNeue-Thin';
     font-size: 150%;
     margin-top: 4%;
+    font-weight: 400;
 }
 
 .captions {
         color: rgb(255, 88, 88);
-        font-family: 'bitwise-font';
+        font-family: 'HelveticaNeue-Thin';
         font-size: 125%;
-        margin-top: 2%;
+        margin-bottom: 4%;
 }
 
 .material-symbols-outlined {
