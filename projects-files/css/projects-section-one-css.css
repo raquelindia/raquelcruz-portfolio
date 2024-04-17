@@ -2,6 +2,13 @@
     font-family: 'VT323';
     src: url('VT323/VT323-Regular.ttf') format('truetype');
     }
+
+    .line {
+        height: 1px;
+        background-color:  rgb(156, 86, 226);
+        border:rgb(156, 86, 226);
+        width: 100%;
+    }
     
     .header-span {
     display: flex;
@@ -26,12 +33,6 @@
     margin-bottom: 2%;
     }
     
-    
-    .line {
-    height: 1px;
-    background-color: rgb(156, 86, 226);
-    border:rgb(156, 86, 226)
-    }
     
     .left {
     display: flex;

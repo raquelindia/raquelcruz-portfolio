@@ -1,8 +1,6 @@
 .work-experience-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
     background-color: black;
 }
 
@@ -10,12 +8,25 @@ body {
     font-family: 'HelveticaNeue-Thin';
 }
 
+.line {
+    height: 1px;
+    background-color:  rgb(156, 86, 226);
+    border:rgb(156, 86, 226);
+    width: 100%;
+}
+
  #work-section-title {
     font-size: 400%;
     text-align: center;
-    padding-top: 5%;
+    margin-top: 5%;
     font-family: 'VT323';
    
+}
+
+.work-section-content {
+    margin-left: 5%;
+    margin-right: 2%;
+
 }
 
 .company {
@@ -35,6 +46,7 @@ p {
 
 #bottom-text {
     font-size: 150%;
+    margin-top: -35%;
 }
 
 /*media queries*/
