@@ -21,10 +21,12 @@ body {
 }
 
 #child-1-left {
-    background-color: rgba(19, 19, 19, 0.5);
     height: 100%;
     padding-top:8%;
     padding-bottom: 8%;
+    border-radius: 8px;
+    background-color: rgba(19, 19, 19, 0.5);
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
 }
 
 #about-pic {
@@ -33,6 +35,7 @@ body {
     height: 88%;
     border-right: none;
     border-left: none;
+    
    
     
 }
@@ -87,6 +90,7 @@ body {
     font-family: 'HelveticaNeue-Thin';
     color: #24c642;
     font-size: 110%;
+ 
    
 }
 
