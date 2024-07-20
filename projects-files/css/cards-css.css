@@ -29,13 +29,14 @@
 }
 
 .card {
-    border: 1px solid rgb(156, 86, 226);
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
     border-left: none;
     border-right: none;
     padding-left: 2%;
     padding-right: 2%;
     width: 300px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 2%;
 }
 
@@ -45,7 +46,6 @@
 }
 
 .cards-images {
-    border: 1px solid white;
     border-left: none;
     border-right: none;
     height: 350px;

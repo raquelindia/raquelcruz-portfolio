@@ -32,9 +32,35 @@
        $scope.inventoryAppCarouselCount = 0;
        $scope.journalApiCarouselCount = 0;
        $scope.marsWeatherAppCarouselCount = 0;
+       $scope.aiProjectCarouselCount = 0;
        
 
        //   carousel images 
+        $scope.aiProjectCarousel = [
+        {
+        image: "./projects-files/images/ai-project-1.png",
+        title: "",
+        caption: ``
+    },
+    {
+        image: "./projects-files/images/ai-project-2.png",
+        title: "",
+        caption: ``
+    },
+    {
+        image: "./projects-files/images/ai-project-3.png",
+        title: "",
+        caption: ``
+    },
+    {
+        image: "./projects-files/images/ai-project-4.png",
+        title: "",
+        caption: ``
+    },
+
+        ]
+
+
 $scope.chaseCloneCarousel = [
     {
         image: "./projects-files/images/chase-clone-img.png",
@@ -196,6 +222,15 @@ $scope.toggleJournalApiCarousel = function () {
     }
 };
 
+//toggle ai project carousel
+$scope.toggleAiProjectCarousel = function () {
+    if ( $scope.aiProjectCarouselCount < $scope.aiProjectCarousel.length - 1) {
+        $scope.aiProjectCarouselCount = $scope.aiProjectCarouselCount + 1;
+    } else {
+        $scope.aiProjectCarouselCount = 0;
+    }
+};
+
 
 //toggle chase clone carousel 
 $scope.toggleChaseCarousel = function () {
@@ -271,6 +306,10 @@ $scope.toggleMarsWeatherAppCarousel = function () {
         })
         .when("/marsweatherappproject", {
             templateUrl : "marsweatherapp.html",
+            controller: 'portfolioController'
+        })
+        .when("/aiproject", {
+            templateUrl : "aiAppProject.html",
             controller: 'portfolioController'
         });
     });
