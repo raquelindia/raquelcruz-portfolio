@@ -2,23 +2,25 @@
     font-family: 'VT323';
     src: url('VT323/VT323-Regular.ttf') format('truetype');
 }
+
 .projects-template-column {
     display: flex;
     flex-direction: column;
-   
 
-   
+
+
 }
+
 .line {
     height: 1px;
-    background-color:  rgb(156, 86, 226);
-    border:rgb(156, 86, 226);
+    background-color: rgb(156, 86, 226);
+    border: rgb(156, 86, 226);
     width: 100%;
 }
 
 .tech-desc {
     margin-top: 10%;
-} 
+}
 
 .projects-title {
     font-size: 400%;
@@ -50,7 +52,7 @@
 
 .work-experience-html {
     width: 80%;
-  
+
 }
 
 .logos-html {
@@ -59,20 +61,14 @@
 
 
 /*media queries*/
-@media (max-width: 768px) {
-   
-}
+@media (max-width: 768px) {}
 
 @media (max-width: 576px) {
     .projects-title {
         font-size: 270%;
         margin-bottom: 30%;
     }
-    
+
 
 
 }
-
-
-
-

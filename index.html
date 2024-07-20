@@ -1,319 +1,322 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/portfolio-styles.css">
     <title>Raquel Cruz | Software Engineer</title>
 </head>
 
 <body>
-    
+
     <div ng-app="portfolioApp" ng-controller="portfolioController">
         <nav>
-         <div ng-include="'nav.html'"></div>
-         </nav>
-         <div id="background-file" ng-include="'./background-file.html'"></div>
-  <div id="index" ng-view></div>
-</div>
-<script>
-    var app = angular.module("portfolioApp", ["ngRoute"]);
-    app.controller('portfolioController', function($scope){
-       $scope.state = "home"; 
-       $scope.listColor = '#FB0EB0';
-       $scope.valueColor = '#9C56E2';
-       $scope.terminalGreen = '#24c642';
-       $scope.chaseCarouselCount = 0;
-       $scope.budgetingAppCarouselCount = 0;
-       $scope.inventoryAppCarouselCount = 0;
-       $scope.journalApiCarouselCount = 0;
-       $scope.marsWeatherAppCarouselCount = 0;
-       $scope.aiProjectCarouselCount = 0;
-       
-
-       //   carousel images 
-        $scope.aiProjectCarousel = [
-        {
-        image: "./projects-files/images/ai-project-1.png",
-        title: "",
-        caption: ``
-    },
-    {
-        image: "./projects-files/images/ai-project-2.png",
-        title: "",
-        caption: ``
-    },
-    {
-        image: "./projects-files/images/ai-project-3.png",
-        title: "",
-        caption: ``
-    },
-    {
-        image: "./projects-files/images/ai-project-4.png",
-        title: "",
-        caption: ``
-    },
-
-        ]
+            <div ng-include="'nav.html'"></div>
+        </nav>
+        <div id="background-file" ng-include="'./background-file.html'"></div>
+        <div id="index" ng-view></div>
+    </div>
+    <script>
+        var app = angular.module("portfolioApp", ["ngRoute"]);
+        app.controller('portfolioController', function ($scope) {
+            $scope.state = "home";
+            $scope.listColor = '#FB0EB0';
+            $scope.valueColor = '#9C56E2';
+            $scope.terminalGreen = '#24c642';
+            $scope.chaseCarouselCount = 0;
+            $scope.budgetingAppCarouselCount = 0;
+            $scope.inventoryAppCarouselCount = 0;
+            $scope.journalApiCarouselCount = 0;
+            $scope.marsWeatherAppCarouselCount = 0;
+            $scope.aiProjectCarouselCount = 0;
 
 
-$scope.chaseCloneCarousel = [
-    {
-        image: "./projects-files/images/chase-clone-img.png",
-        title: "Accounts Page",
-        caption: `This is the Accounts page. I worked on this page first. 
+            //   carousel images 
+            $scope.aiProjectCarousel = [
+                {
+                    image: "./projects-files/images/ai-project-1.png",
+                    title: "Chat",
+                    caption: `Home page`
+                },
+                {
+                    image: "./projects-files/images/ai-project-2.png",
+                    title: "Chat",
+                    caption: `Dark mode and customized accents`
+                },
+                {
+                    image: "./projects-files/images/ai-project-4.png",
+                    title: "Settings",
+                    caption: `Accents`
+                },
+                {
+                    image: "./projects-files/images/ai-project-3.png",
+                    title: "Settings",
+                    caption: `Background colors and light/dark mode`
+                },
+
+            ]
+
+
+            $scope.chaseCloneCarousel = [
+                {
+                    image: "./projects-files/images/chase-clone-img.png",
+                    title: "Accounts Page",
+                    caption: `This is the Accounts page. I worked on this page first. 
         I think this was the most challenging part. Figuring out all colors and 
         copying the styles exactly was tedious, but it is consistent throughout the Chase website 
         so the other pages were much easier.`
-    },
-    {
-        image: "./projects-files/images/chase-clone-plan.png",
-        title: "Plan & Track",
-        caption: "This is another page I worked on. "
-    },
-    {
-        image: "./projects-files/images/chase-clone-investments.png",
-        title: "Investments",
-        caption: " "
-    },
-    {
-        image: "./projects-files/images/chase-clone-security.png",
-        title: "Security",
-        caption: " "
-    }
-];
+                },
+                {
+                    image: "./projects-files/images/chase-clone-plan.png",
+                    title: "Plan & Track",
+                    caption: "This is another page I worked on. "
+                },
+                {
+                    image: "./projects-files/images/chase-clone-investments.png",
+                    title: "Investments",
+                    caption: " "
+                },
+                {
+                    image: "./projects-files/images/chase-clone-security.png",
+                    title: "Security",
+                    caption: " "
+                }
+            ];
 
-//budgeting app images 
-$scope.budgetingAppCarousel = [
-    {
-        image: "./projects-files/images/budgeting-overview-thumbnail.png",
-        title: "Overview",
-        caption: `This is the Overview. I used SASS to do the
+            //budgeting app images 
+            $scope.budgetingAppCarousel = [
+                {
+                    image: "./projects-files/images/budgeting-overview-thumbnail.png",
+                    title: "Overview",
+                    caption: `This is the Overview. I used SASS to do the
          sliding animation and the glow when you hover over some of the components.`
-    },
-    {
-        image: "./projects-files/images/budgeting-budget-thumbnail.png",
-        title: "Budget Feature",
-        caption: `This is the Budget feature. 
+                },
+                {
+                    image: "./projects-files/images/budgeting-budget-thumbnail.png",
+                    title: "Budget Feature",
+                    caption: `This is the Budget feature. 
         I used AngularJS so I made a reuasable component to display each budget the user creates.`
-    },
-    {
-        image: "./projects-files/images/budgeting-subscriptions-thumbnail.png",
-        title: "Subscriptions Section",
-        caption: `This is the Subscriptions section. I wanted this project to be something like the Mint app,
+                },
+                {
+                    image: "./projects-files/images/budgeting-subscriptions-thumbnail.png",
+                    title: "Subscriptions Section",
+                    caption: `This is the Subscriptions section. I wanted this project to be something like the Mint app,
         so I included this.`
-    },
-    {
-        image: "./projects-files/images/budgeting-edit-budgets-form-thumbnail.png",
-        title: "Edit Budgets Form",
-        caption: `This is the form to edit existing budgets.`
-    },
-    {
-        image: "./projects-files/images/budgeting-new-budget-form-thumbnail.png",
-        title: "New Budget Form",
-        caption: `This is the form to create new budgets.`
-    },
-    {
-        image: "./projects-files/images/budgeting-new-subscription-form-thumbnail.png",
-        title: "New Subscription Form",
-        caption: `This is the form to create new subscriptions.`
-    }
-];
+                },
+                {
+                    image: "./projects-files/images/budgeting-edit-budgets-form-thumbnail.png",
+                    title: "Edit Budgets Form",
+                    caption: `This is the form to edit existing budgets.`
+                },
+                {
+                    image: "./projects-files/images/budgeting-new-budget-form-thumbnail.png",
+                    title: "New Budget Form",
+                    caption: `This is the form to create new budgets.`
+                },
+                {
+                    image: "./projects-files/images/budgeting-new-subscription-form-thumbnail.png",
+                    title: "New Subscription Form",
+                    caption: `This is the form to create new subscriptions.`
+                }
+            ];
 
 
-//inventory app carousel
-$scope.inventoryAppCarousel = [
-    {
-        image: "./projects-files/images/inventory-app.png",
-        title: "Home Page",
-        caption: `This is the home page of our app. 
+            //inventory app carousel
+            $scope.inventoryAppCarousel = [
+                {
+                    image: "./projects-files/images/inventory-app.png",
+                    title: "Home Page",
+                    caption: `This is the home page of our app. 
         I looked on google for ideas for color schemes. `
-    },
-    {
-        image: "./projects-files/images/inventory-app.png",
-        title: "Home Page",
-        caption: `Once I picked a color scheme that everyone liked, I created a wireframe
+                },
+                {
+                    image: "./projects-files/images/inventory-app.png",
+                    title: "Home Page",
+                    caption: `Once I picked a color scheme that everyone liked, I created a wireframe
         and made a list of all the colors and styles because there was one other person working
         on the frontend with me`
-    },
-    {
-        image: "./projects-files/images/inventory-individual.png",
-        title: "Individual Item",
-        caption: `This is a CRUD app so each individual item can be edited or deleted.`
-    }
-];
+                },
+                {
+                    image: "./projects-files/images/inventory-individual.png",
+                    title: "Individual Item",
+                    caption: `This is a CRUD app so each individual item can be edited or deleted.`
+                }
+            ];
 
-//work social carousel
-$scope.marsWeatherAppCarousel = [
-    {
-        image: "./projects-files/images/mobile-mars-weather-app.png",
-        title: "First section",
-        caption: "The top of the page is the most current update of the weather on Mars and the previous seven days."
-    },
-    {
-        image: "./projects-files/images/desktop-mars-weather-app.png",
-        title: "Past seven days",
-        caption: "This is the UV index, the time of the sunsise and the sunset and the latest pictures the rovers on Mars have taken."
-    }
-];
+            //work social carousel
+            $scope.marsWeatherAppCarousel = [
+                {
+                    image: "./projects-files/images/mobile-mars-weather-app.png",
+                    title: "First section",
+                    caption: "The top of the page is the most current update of the weather on Mars and the previous seven days."
+                },
+                {
+                    image: "./projects-files/images/desktop-mars-weather-app.png",
+                    title: "Past seven days",
+                    caption: "This is the UV index, the time of the sunsise and the sunset and the latest pictures the rovers on Mars have taken."
+                }
+            ];
 
 
-//journal api carousel
-$scope.journalApiCarousel = [
-    {
-        image: "./projects-files/images/journal-api.png",
-        title: "Auth0 Login",
-        caption: `This the Auth0 login. A user can log in with their google email. 
+            //journal api carousel
+            $scope.journalApiCarousel = [
+                {
+                    image: "./projects-files/images/journal-api.png",
+                    title: "Auth0 Login",
+                    caption: `This the Auth0 login. A user can log in with their google email. 
         I didn't want to save passwords, so It doesn't store passwords. 
         You log in with your email through Auth0, and then it checks if your username is saved in the database.`
-    },
-    {
-        image: "./projects-files/images/journal-api-all-entries.png",
-        title: "Journal Entries",
-        caption: `Once a user is logged in they can view all of their journal entries at once
+                },
+                {
+                    image: "./projects-files/images/journal-api-all-entries.png",
+                    title: "Journal Entries",
+                    caption: `Once a user is logged in they can view all of their journal entries at once
         or individually.`
-    },
-    {
-        image: "./projects-files/images/journal-api-all-entries.png",
-        title: "Journal Entries",
-        caption: "They can create a new journal entry or update or delete an existing one."
-    },
-    {
-        image: "./projects-files/images/journal-api-logged-in.png",
-        title: "Profile",
-        caption: "You can also view your profile information by going to this page."
-    },
-    {
-        image: "./projects-files/images/journal-api-logged-out.png",
-        title: "Log Out Screen",
-        caption: "After a user logs out it takes you to this page."
-    },
-    {
-        image: "./projects-files/images/journal-api-admin-entries-view.png",
-        title: "Admin Entries View",
-        caption: "An admin can view, edit, or delete all entries or users."
-    },
-    {
-        image: "./projects-files/images/journal-api-admin-user-view.png",
-        title: "Admin Users View",
-        caption: "An admin can view, edit, or delete all entries or users."
-    }
-];
+                },
+                {
+                    image: "./projects-files/images/journal-api-all-entries.png",
+                    title: "Journal Entries",
+                    caption: "They can create a new journal entry or update or delete an existing one."
+                },
+                {
+                    image: "./projects-files/images/journal-api-logged-in.png",
+                    title: "Profile",
+                    caption: "You can also view your profile information by going to this page."
+                },
+                {
+                    image: "./projects-files/images/journal-api-logged-out.png",
+                    title: "Log Out Screen",
+                    caption: "After a user logs out it takes you to this page."
+                },
+                {
+                    image: "./projects-files/images/journal-api-admin-entries-view.png",
+                    title: "Admin Entries View",
+                    caption: "An admin can view, edit, or delete all entries or users."
+                },
+                {
+                    image: "./projects-files/images/journal-api-admin-user-view.png",
+                    title: "Admin Users View",
+                    caption: "An admin can view, edit, or delete all entries or users."
+                }
+            ];
 
-//toggle inventory app carousel
-$scope.toggleInventoryAppCarousel = function () { 
-if( $scope.inventoryAppCarouselCount < $scope.inventoryAppCarousel.length - 1) {
-    $scope.inventoryAppCarouselCount = $scope.inventoryAppCarouselCount + 1;
-} else {
-    $scope.inventoryAppCarouselCount = 0;
-};
-};
+            //toggle inventory app carousel
+            $scope.toggleInventoryAppCarousel = function () {
+                if ($scope.inventoryAppCarouselCount < $scope.inventoryAppCarousel.length - 1) {
+                    $scope.inventoryAppCarouselCount = $scope.inventoryAppCarouselCount + 1;
+                } else {
+                    $scope.inventoryAppCarouselCount = 0;
+                };
+            };
 
-//toggle journal api carousel
-$scope.toggleJournalApiCarousel = function () {
-    if ( $scope.journalApiCarouselCount < $scope.journalApiCarousel.length - 1) {
-        $scope.journalApiCarouselCount = $scope.journalApiCarouselCount + 1;
-    } else {
-        $scope.journalApiCarouselCount = 0;
-    }
-};
+            //toggle journal api carousel
+            $scope.toggleJournalApiCarousel = function () {
+                if ($scope.journalApiCarouselCount < $scope.journalApiCarousel.length - 1) {
+                    $scope.journalApiCarouselCount = $scope.journalApiCarouselCount + 1;
+                } else {
+                    $scope.journalApiCarouselCount = 0;
+                }
+            };
 
-//toggle ai project carousel
-$scope.toggleAiProjectCarousel = function () {
-    if ( $scope.aiProjectCarouselCount < $scope.aiProjectCarousel.length - 1) {
-        $scope.aiProjectCarouselCount = $scope.aiProjectCarouselCount + 1;
-    } else {
-        $scope.aiProjectCarouselCount = 0;
-    }
-};
+            //toggle ai project carousel
+            $scope.toggleAiProjectCarousel = function () {
+                if ($scope.aiProjectCarouselCount < $scope.aiProjectCarousel.length - 1) {
+                    $scope.aiProjectCarouselCount = $scope.aiProjectCarouselCount + 1;
+                } else {
+                    $scope.aiProjectCarouselCount = 0;
+                }
+            };
 
 
-//toggle chase clone carousel 
-$scope.toggleChaseCarousel = function () {
-   if ( $scope.chaseCarouselCount < $scope.chaseCloneCarousel.length - 1) {
-        $scope.chaseCarouselCount = $scope.chaseCarouselCount + 1;
-   } else {
-    $scope.chaseCarouselCount = 0;
-   }
-};
-  
-// toggle budgeting app carousel 
+            //toggle chase clone carousel 
+            $scope.toggleChaseCarousel = function () {
+                if ($scope.chaseCarouselCount < $scope.chaseCloneCarousel.length - 1) {
+                    $scope.chaseCarouselCount = $scope.chaseCarouselCount + 1;
+                } else {
+                    $scope.chaseCarouselCount = 0;
+                }
+            };
 
-$scope.toggleBudgetingAppCarousel = function () {
-   if ( $scope.budgetingAppCarouselCount < $scope.budgetingAppCarousel.length - 1) {
-    console.log($scope.budgetingAppCarouselCount);
-        $scope.budgetingAppCarouselCount = $scope.budgetingAppCarouselCount + 1;
-        console.log($scope.budgetingAppCarouselCount);
-        console.log($scope.budgetingAppCarousel[$scope.budgetingAppCarouselCount]);
-   } else {  
-    console.log($scope.budgetingAppCarouselCount);
-    $scope.budgetingAppCarouselCount = 0;
-    console.log($scope.budgetingAppCarouselCount);
-   }
-};
+            // toggle budgeting app carousel 
 
-//toggle work social carousel
-$scope.toggleMarsWeatherAppCarousel = function () {
-   if ( $scope.marsWeatherAppCarouselCount <  $scope.marsWeatherAppCarousel.length - 1) {
-    console.log($scope.workSocialCarouselCount);
-         $scope.marsWeatherAppCarouselCount = $scope.marsWeatherAppCarouselCount + 1;
-         console.log($scope.marsWeatherAppCarouselCount);
-         console.log($scope.marsWeatherAppCarousel[$scope.marsWeatherAppCarouselCount]);
-   } else {
-    $scope.marsWeatherAppCarouselCount = 0;
-    console.log($scope.marsWeatherAppCarousel[$scope.marsWeatherAppCarouselCount]);
-   };
-};
+            $scope.toggleBudgetingAppCarousel = function () {
+                if ($scope.budgetingAppCarouselCount < $scope.budgetingAppCarousel.length - 1) {
+                    console.log($scope.budgetingAppCarouselCount);
+                    $scope.budgetingAppCarouselCount = $scope.budgetingAppCarouselCount + 1;
+                    console.log($scope.budgetingAppCarouselCount);
+                    console.log($scope.budgetingAppCarousel[$scope.budgetingAppCarouselCount]);
+                } else {
+                    console.log($scope.budgetingAppCarouselCount);
+                    $scope.budgetingAppCarouselCount = 0;
+                    console.log($scope.budgetingAppCarouselCount);
+                }
+            };
 
-    });
-    app.config(function($routeProvider){
-        $routeProvider
-        .when("/", {
-            templateUrl : "home.html",
-            controller: 'portfolioController'
-        })
-        .when("/home", {
-            templateUrl : "home.html",
-            controller: "portfolioController"
-        })
-        .when("/about", {
-            templateUrl : "about.html",
-            controller: 'portfolioController'
-        })
-        .when("/projects", {
-            templateUrl : "projects.html",
-            controller: 'portfolioController'
-        })
-        .when("/budgetingappproject", {
-            templateUrl : "budgetingapp.html",
-            controller: 'portfolioController'
-        })
-        .when("/chasecloneproject", {
-            templateUrl : "chaseclone.html",
-            controller: 'portfolioController'
-        })
-        .when("/inventoryappproject", {
-            templateUrl : "inventoryapp.html",
-            controller: 'portfolioController'
-        })
-        .when("/journalapiproject", {
-            templateUrl : "journalapi.html",
-            controller: 'portfolioController'
-        })
-        .when("/marsweatherappproject", {
-            templateUrl : "marsweatherapp.html",
-            controller: 'portfolioController'
-        })
-        .when("/aiproject", {
-            templateUrl : "aiAppProject.html",
-            controller: 'portfolioController'
+            //toggle work social carousel
+            $scope.toggleMarsWeatherAppCarousel = function () {
+                if ($scope.marsWeatherAppCarouselCount < $scope.marsWeatherAppCarousel.length - 1) {
+                    console.log($scope.workSocialCarouselCount);
+                    $scope.marsWeatherAppCarouselCount = $scope.marsWeatherAppCarouselCount + 1;
+                    console.log($scope.marsWeatherAppCarouselCount);
+                    console.log($scope.marsWeatherAppCarousel[$scope.marsWeatherAppCarouselCount]);
+                } else {
+                    $scope.marsWeatherAppCarouselCount = 0;
+                    console.log($scope.marsWeatherAppCarousel[$scope.marsWeatherAppCarouselCount]);
+                };
+            };
+
         });
-    });
+        app.config(function ($routeProvider) {
+            $routeProvider
+                .when("/", {
+                    templateUrl: "home.html",
+                    controller: 'portfolioController'
+                })
+                .when("/home", {
+                    templateUrl: "home.html",
+                    controller: "portfolioController"
+                })
+                .when("/about", {
+                    templateUrl: "about.html",
+                    controller: 'portfolioController'
+                })
+                .when("/projects", {
+                    templateUrl: "projects.html",
+                    controller: 'portfolioController'
+                })
+                .when("/budgetingappproject", {
+                    templateUrl: "budgetingapp.html",
+                    controller: 'portfolioController'
+                })
+                .when("/chasecloneproject", {
+                    templateUrl: "chaseclone.html",
+                    controller: 'portfolioController'
+                })
+                .when("/inventoryappproject", {
+                    templateUrl: "inventoryapp.html",
+                    controller: 'portfolioController'
+                })
+                .when("/journalapiproject", {
+                    templateUrl: "journalapi.html",
+                    controller: 'portfolioController'
+                })
+                .when("/marsweatherappproject", {
+                    templateUrl: "marsweatherapp.html",
+                    controller: 'portfolioController'
+                })
+                .when("/aiproject", {
+                    templateUrl: "aiAppProject.html",
+                    controller: 'portfolioController'
+                });
+        });
 
-</script>
+    </script>
 </body>
+
 </html>

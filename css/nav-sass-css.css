@@ -1,6 +1,7 @@
 .nav-links {
   transition: box-shadow 0.9 ease;
 }
+
 .nav-links:hover {
   box-shadow: 0px 6px 6px 0px rgba(255, 255, 255, 0.4);
   color: #9C56E2;
@@ -14,10 +15,12 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 #star-button {
   animation: rotateClockwise 3s infinite linear;
 }

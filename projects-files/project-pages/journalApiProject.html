@@ -1,122 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/journal-api-styles.css">
-        <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/project-pages.css">
-    </head>
-    <body>
-        <div class="container">
+
+<head>
+    <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/journal-api-styles.css">
+    <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/project-pages.css">
+</head>
+
+<body>
+    <div class="container">
         <div>
-            <div><h1>Journal API</h1></div>
-        </div>
-
-        <div class="sections">
-            <div><hr class="line"></div>
-            <div class="center-content"><img class="first-img" alt="Screenshot of Auth0 login" src="{{ journalApiCarousel[journalApiCarouselCount].image  }}"><button class="carousel-button" ng-click="toggleJournalApiCarousel()"><span class="material-symbols-outlined">arrow_forward_ios</span></button></div>
-            <div class="center-content"><h2 class="image-titles">{{  journalApiCarousel[journalApiCarouselCount].title }}</h2></div>
-            <div class="center-content"><p class="captions">{{ journalApiCarousel[journalApiCarouselCount].caption }}</p></div>
-            <div><hr class="line"></div>
-        </div>
-
-    <div class="links-div">
-        <div class="center-content"><a class="project-links" href="https://github.com/raquelindia/journal-api" target="_blank">Github Repository</a></div>
-        <div  class="galaga-ship-file" ng-include="'./home-files/animations/galaga-ship.html'"></div>
-        <div class="center-content"><a class="project-links" href="https://dev-wmyn6dpovcmdzz3o.us.auth0.com/u/login?state=hKFo2SB4dFlKWVk5cG5yemdJM3JWblBhcjYwcVdEcnM0RDFyb6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIENpdDhYQnRSNjFMQnctaG1qXzJSRFhOOVFyQnFvNlVKo2NpZNkgQ3ViSHNyRXR4cWk0N2Rncnh1b2RwRGF0T1VTellraVk" target="_blank">Deployed App</a></div>
-    </div>
-
-        <div class="sections">
-            <div><hr class="line"></div>
-            <div class="center-content"><h2 class="sections-titles">Tech:</h2></div>
-            <div class="center-content">
-            <ul class="tech-stack-list">
-                <li style="color: #0082cb">SQLITE3</li>
-                <li style="color: #ff7d26">SEQUELIZE</li>
-                <li style="color: yellow">AUTH0</li>
-                <li>EXPRESS</li>
-                <li style="color: yellow">JEST</li>
-                <li style="color: orange">POSTMAN</li>
-                <li style="color: rgb(184, 73, 184)">RENDER</li>
-            </ul>
-            </div>
-            <div><hr class="line"></div>
-        </div>
-
-        <div class="sections">
-            <div><hr class="line"></div>
-            <div class="center-content"><h3 class="sections-titles">Objective</h3></div>
-            <div class="center-content"><p class="objectives-descriptions">This is a project for Multiverse. The objective
-                was to create an API with a login.
-            </p></div>
-            <div class="center-content"><p class="criteria-heading">Criteria:</p></div>
-            <ol class="criteria-list">
-                <li class="criteria-list-items"><span class="bold-text">MVP Application and REST: </span>A user should be able to log in to a deployed app and create, read update and delete from the database by accessing RESTful routes.</li>
-                <li class="criteria-list-items"><span class="bold-text">Login and Hashing: </span>A user should be able to login to my API and any saved passwords are hashed and salted before saved to the database. (note: If you use OAuth, you might not even store passwords at all.)</li>
-                <li class="criteria-list-items"><span class="bold-text">Register: </span>A user should be able to sign up for the API and be granted authorization to access the API.</li>
-                <li class="criteria-list-items"><span class="bold-text">Authorization: </span>A users API shouldbe protected from unauthorized users. An unauthorized user should see a message saying they do not have access to the API. A user should not be able to create new entities without logging in. A user data should only be accessible, editable, and deleteable by the user.</li>
-                <li class="criteria-list-items"><span class="bold-text">Associated Data: </span>A user should be able to read a single entry, see the associated user info and other associated data.</li>
-                <li class="criteria-list-items"><span class="bold-text">Admin vs. User: </span> An admin should have special super-user account type that allows access to content users don't have access to. A basic user should only see their own entries. An admin should be able to see all entries and regardless of user and edit other users information via the API.</li>
-            </ol>
-            <div><hr class="line"></div>
-        </div>
-   
-
-        <div class="approach-div sections">
-            <div><hr class="line"></div>
             <div>
-            <div class="center-content"><h4 class="sections-titles">Approach</h4></div>
-            <div class="center-content"><p class="approach-desc">For this project I used Auth0 for the login as opposed to saving and hashing passwords. I used Auth0s log in with Google feature. 
-                My API checks the SQLite3 database for an email that matches the one you logged in with and displays your profile information and will only allow you to see entries associated with that email.</p></div>
-                </div>
-
-                <div>
-                    <div class="center-content"><h5 class="approach-subheadings">Steps Taken</h5></div>
-                    <div class="center-content"><p class="steps-desc">Making this API took me about a week. I started this project by looking for examples of other APIs and looking at the work we had done in the weeks prior, because even though we spent a few weeks learning about them, I still felt 
-                        like I didn't understand all the things that go into creating one. I don't think I had any examples of my own that worked completely. All the little projects we had done with APIs, I could only get to 'kind of' work. 
-                        I started with doing the parts that I was confident that I could do correctly. I picked journal entries for my API because I didn't want to overcomplicate things knowing I really 
-                        didn't know what I was doing yet. The first thing I did was create the Sequelize models because I knew what I would need to include in them, and then I started working on the database. I think I had used the wrong database at first and I had to start over a few times. I created a file with seed data 
-                        and then started working on seeding the database. After that I started with the routes. I tested themwith Postman and then I added Auth0 right after. After I was done with everything I tested the 
-                        Sequelize models using Jest.
-                    </p></div>
-                </div>
-
-                <div>
-                <div class="center-content"><h5 class="approach-subheadings">Challenges</h5></div>
-                <div class="center-content"><p class="challenges-desc">I struggled with this project because I did everything on my own, so I spent a lot of time troubleshooting.
-                    Getting Auth0 set up was tricky and it took up the majority of the time I spent working on this. Another thing that was a challenge for me was getting the SQLite3 database set up. My database either kept dropping the tables or
-                    duplicating everything over and over. This is something I struggled with for a while. I had to find examples of similar projects to reference to figure out how to make it work the way I intended.
-                    Auth0 took a while for me to set up as well and was more difficult than I expected.
-                </p></div>
-                </div>
-                <div><hr class="line"></div>
+                <h1>Journal API</h1>
+            </div>
         </div>
 
         <div class="sections">
-            <div><hr class="line"></div>
-            <div class="center-content"><h5 class="approach-subheadings">Summary</h5></div>
-            <div class="center-content"><p class="summary-desc">
-               I think out of all the projects I've done for Multiverse, this one was the most challenging but, I definitely learned the most 
-               from this one. I have been doing little front end projects since I coding, this was the first time I did anything like this without help. 
-               I need more practice creating my own APIs because somethings are still confusing to me, but I am confident that I am at least able to figure it out if I need to.
-                One thing I can improve on is doing the UI and the API. The API and login works but the UI doesn't have any styling or anything. I started to do the UI but I couldn't get it to work and I didn't want
-                to break anything in the process.
-            </p></div>
-            <div><hr class="line"></div>
+            <div class="center-content"><img class="first-img" alt="Screenshot of Auth0 login"
+                    src="{{ journalApiCarousel[journalApiCarouselCount].image  }}"><button class="carousel-button"
+                    ng-click="toggleJournalApiCarousel()"><span
+                        class="material-symbols-outlined">arrow_forward_ios</span></button></div>
+            <div class="center-content">
+                <h2 class="image-titles">{{ journalApiCarousel[journalApiCarouselCount].title }}</h2>
+            </div>
+            <div class="center-content">
+                <p class="captions">{{ journalApiCarousel[journalApiCarouselCount].caption }}</p>
+            </div>
+        </div>
+
+        <div class="links-div">
+            <div class="center-content"><a class="project-links" href="https://github.com/raquelindia/journal-api"
+                    target="_blank">Github Repository</a></div>
+            <div class="galaga-ship-file" ng-include="'./home-files/animations/galaga-ship.html'"></div>
+            <div class="center-content"><a class="project-links"
+                    href="https://dev-wmyn6dpovcmdzz3o.us.auth0.com/u/login?state=hKFo2SB4dFlKWVk5cG5yemdJM3JWblBhcjYwcVdEcnM0RDFyb6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIENpdDhYQnRSNjFMQnctaG1qXzJSRFhOOVFyQnFvNlVKo2NpZNkgQ3ViSHNyRXR4cWk0N2Rncnh1b2RwRGF0T1VTellraVk"
+                    target="_blank">Deployed App</a></div>
+        </div>
+
+        <div class="sections">
+
+            <div class="center-content">
+                <h2 class="sections-titles">Tech:</h2>
+            </div>
+            <div class="center-content">
+                <ul class="tech-stack-list">
+                    <li style="color: #0082cb">SQLITE3</li>
+                    <li style="color: #ff7d26">SEQUELIZE</li>
+                    <li style="color: yellow">AUTH0</li>
+                    <li>EXPRESS</li>
+                    <li style="color: hotpink">JEST</li>
+                    <li style="color: orange">POSTMAN</li>
+                    <li style="color: lime">RENDER</li>
+                </ul>
             </div>
 
-            <div class="sections">
-                <div><hr class="line"></div>
-                <div class="center-content"><h6 class="approach-subheadings">Quantitive Impact</h6></div>
-                <div class="center-content"><p class="summary-desc" style="color: violet">
-                    This project serves as tangible evidence for my headline statement as it underscores my adept problem-solving skills and decision making. Opting for 
-                    Auth0 authentication over password hashing, I demonstrated a thoughtful consideration of security practices, aligning with my commitment to enhancing software usability
-                    and functionality while prioritizing user security. By integrating Auth0's log in with Google feature, I showcased my ability to leverage third-party services to streamline user 
-                    experience without compromising on security standards. Furthermore, designing the API to interact seamlessly with a SQLite3 database to personalize user profiles and restrict access based on email 
-                    authentication highlighted my capability to architect and implement back end systems. Through this project, I not only strengthened my technical skills, but also honed the problem-solving 
-                    skills I use at Fiserv.
-                </p></div>
-                <div><hr class="line"></div>
-            </div>
+        </div>
+
 
     </div>
-    </body>
+</body>
+
 </html>

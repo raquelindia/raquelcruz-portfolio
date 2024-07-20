@@ -1,105 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/work-social-styles.css">
-        <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/project-pages.css">
-    </head>
-    <body>
-        <div class="container">
+
+<head>
+    <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/work-social-styles.css">
+    <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/project-pages.css">
+</head>
+
+<body>
+    <div class="container">
         <div class="w-full">
-            <div><h1>AI Chatbot</h1></div>
+            <div>
+                <h1>AI Chatbot</h1>
+            </div>
         </div>
 
         <div class="sections">
-            <div><hr class="line"></div>
-            <div class="center-content"><img class="first-img" alt="placeholder stuff" src="{{ aiProjectCarousel[aiProjectCarouselCount].image }}"><button class="carousel-button"  ng-click="toggleAiProjectCarousel()"><span class="material-symbols-outlined">arrow_forward_ios</span></button></div>
-            <div class="center-content"><h2 class="image-titles">{{  aiProjectCarousel[aiProjectCarouselCount].title }}</h2></div>
-            <div class="center-content"><p class="captions">{{ aiProjectCarousel[aiProjectCarouselCount].caption }}</p></div>
-            <div><hr class="line"></div>
+
+            <div class="center-content"><img class="first-img" alt="placeholder stuff"
+                    src="{{ aiProjectCarousel[aiProjectCarouselCount].image }}"><button class="carousel-button"
+                    ng-click="toggleAiProjectCarousel()"><span
+                        class="material-symbols-outlined">arrow_forward_ios</span></button></div>
+            <div class="center-content">
+                <h2 class="image-titles">{{ aiProjectCarousel[aiProjectCarouselCount].title }}</h2>
+            </div>
+            <div class="center-content">
+                <p class="captions">{{ aiProjectCarousel[aiProjectCarouselCount].caption }}</p>
+            </div>
+
         </div>
 
         <div class="links-div">
-            <div class="center-content"><a class="project-links" href="https://github.com/raquelindia/ai-project">Github Repository</a></div>
-            <div class="galaga-ship-file"  ng-include="'./home-files/animations/galaga-ship.html'"></div>
-            <div class="center-content" ><a class="project-links" href="https://themes-ai.onrender.com">Deployed App</a></div>
+            <div class="center-content"><a class="project-links" href="https://github.com/raquelindia/ai-project">Github
+                    Repository</a></div>
+            <div class="galaga-ship-file" ng-include="'./home-files/animations/galaga-ship.html'"></div>
+            <div class="center-content"><a class="project-links" href="https://themes-ai.onrender.com">Deployed App</a>
             </div>
+        </div>
 
-   
+
         <div class="sections">
-            <div><hr class="line"></div>
-            <div class="center-content"><h2 class="sections-titles">Tech:</h2></div>
+
             <div class="center-content">
-            <ul class="tech-stack-list">
-                <li style="color: red">ANGULARJS</li>
-                <li style="color: #0082cb">TAILWIND</li>
-                <li style="color: #f1c09f">CHATGPT API</li>
-                <li>GOOGLE MATERIAL ICONS</li>
-                <li>RENDER</li>
-            </ul>
+                <h2 class="sections-titles">Tech:</h2>
             </div>
-            <div><hr class="line"></div>
+            <div class="center-content">
+                <ul class="tech-stack-list">
+                    <li style="color: red">ANGULARJS</li>
+                    <li style="color: #0082cb">TAILWIND</li>
+                    <li style="color: #f1c09f">CHATGPT API</li>
+                    <li style="color: #11ff00">NODE.JS</li>
+                    <li style="color: yellow">EXPRESS</li>
+                    <li style="color: hotpink">GOOGLE MATERIAL ICONS</li>
+                    <li>RENDER</li>
+                </ul>
+            </div>
+
         </div>
-
-
-
-<div class="approach-div sections">
-    <div><hr class="line"></div>
-    <div>
-    <div class="center-content"><h4 class="sections-titles">Approach</h4></div>
-    <div class="center-content"><p class="approach-desc">For this project I tried to create something that looks similar to the Apple 
-        Weather App. I thought the idea of a weather app would be cool but I also am really interested in space. I used NASAs Curiosity Rover API to get the data I needed for it. I used AngularJS, and Tailwind. 
-        I also used Google Material Icons because on the Apple weather app there are icons next to the titles of the sections.
-    </p></div>
-        </div>
-
-        <div>
-            <div class="center-content"><h5 class="approach-subheadings">Steps Taken</h5></div>
-            <div class="center-content"><p class="steps-desc">I finished this project in a couple days but I've still been adding to it because I want there to be more features. The first thing I did when I started this project was find the right API to use. NASA has two APIs for Mars weather 
-                and one of them updates more frequently than the other. Once I got an API I could use, I created global variables to hold the data from the API that I knew I was going to use.
-                I needed a lot more information to display the weather for the current day or latest weather, and then for the previous seven days section, I just included the dates, atmosphere, highs and lows.
-                For the latest update I included the UV index, the time of the sunrise and sunset and the last section is the latest pictures taken from the rovers on Mars.
-                For the background, I thought it would be cool to have something that moves. The Apple weather app background reflects the time of day and has CSS animations so I did the same thing.
-                I used Tailwind for some parts but there were some parts that made more sense to use regular CSS. There is no routing for this app but I did use the cookies service to save the users preference for
-                temperature. If you click the F or C buttons it switches between fahrenheit and celsius.
-            </p></div>
-        </div>
-
-        <div>
-            <div class="center-content"><h5 class="approach-subheadings">Challenges</h5></div>
-            <div class="center-content"><p class="challenges-desc">The biggest challenge doing this project was working with the API. NASA set a limit fot the number of requests per hour for all the APIs they have, 
-                so there were times it was difficult to test everything without going over the limit. I think even console logging certain things
-                would mess it up sometimes. I also had to limit the number of photos I was getting for the Mars Rover Photos section because there were thousands of photos coming from the API.
-        </p></div>
-        </div>
-        <div><hr class="line"></div>
-</div>
-
-<div class="sections">
-    <div><hr class="line"></div>
-    <div class="center-content"><h5 class="approach-subheadings">Summary</h5></div>
-    <div class="center-content"><p class="summary-desc">
-     I think doing this project was good practice for some of the front end concepts that were confusing to me before.
-      I didn't have to really learn anything new for this project but the API I used was a little complicated and I am glad I got experience 
-      using one that isn't straightforward and has multiple nested arrays of objects. I also learned an easier way to do animated backgrounds with AngularJS.
-      When I started working on this, I used a video for the background and i was having a hard time getting it positioned correctly and it was also making the page slower
-      to load. I ended up creating the background in a seperate HTML file using animations and including it in the index.html file and then giving it a negative z-index.
-    </p></div>
-    <div><hr class="line"></div>
     </div>
+</body>
 
-    <div class="sections">
-        <div><hr class="line"></div>
-        <div class="center-content"><h6 class="approach-subheadings">Quantitive Impact</h6></div>
-        <div class="center-content"><p class="summary-desc" style="color: violet">
-        This project serves as a compelling demonstration of my creative approach to front end development and my ability to integrate diverse technologies to achieve a 
-        desired outcome. By drawing inspiration from the Apple Weather app, and combining it with my interest in space, I crafted a unique and visually appealing weather app using AngularJS 
-        and Tailwind. Leveragig NASAs Curiosity Rover API to source data added a distinctive touch, showcasing my resourcefulness and ability to integrate external APIs into my projects. Additionally, the use
-        of Google Material Icons for visual elements demonstrated attention to detail. My commitment to continous learning and improvement drove me to deliver a polished and innovative app. Through this project,
-        I not only honed my AngularJS skills but also demonstrated my abililty to creatively apply technology to real world projects.
-        </p></div>
-        <div><hr class="line"></div>
-    </div>
-
-        </div>
-    </body>
 </html>

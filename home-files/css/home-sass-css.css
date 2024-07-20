@@ -8,9 +8,12 @@ button:hover {
 }
 
 @keyframes sideToSide {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(15px);
   }

@@ -9,19 +9,20 @@
 
 .ul-nav {
     list-style: none;
-    display: flex;  
+    display: flex;
     justify-content: space-between;
     font-size: 125%;
     position: relative;
     left: -50px;
     gap: 4%;
-    margin-right: 3%;   
-    
+    margin-right: 3%;
+
 }
 
 #star-button {
     margin-left: 2%;
 }
+
 .nav-button {
     background: none;
     color: white;
@@ -36,51 +37,54 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
 
 #links {
     display: flex;
     justify-content: flex-end;
-    
-    
+
+
 }
 
 
-#purple-star{
+#purple-star {
     width: 5%;
 }
 
 
 @media (max-width: 768px) {
-   .nav-button {
-    font-size: 100%;
-   }
-   .ul-nav {
-    margin-right: -4.5%;
-   }
-    
-   
+    .nav-button {
+        font-size: 100%;
+    }
+
+    .ul-nav {
+        margin-right: -4.5%;
+    }
+
+
 }
 
 @media (max-width: 576px) {
-   .nav-button {
-    font-size: 100%;
-   }
-   .ul-nav {
-    margin-right: 6%;
-   }
+    .nav-button {
+        font-size: 100%;
+    }
+
+    .ul-nav {
+        margin-right: 6%;
+    }
 
 
 }
 
 @media (max-width: 390px) {
     .nav-button {
-     font-size: 90%;
+        font-size: 90%;
     }
+
     .ul-nav {
         margin-right: 8%;
     }
-        
- 
- }
+
+
+}

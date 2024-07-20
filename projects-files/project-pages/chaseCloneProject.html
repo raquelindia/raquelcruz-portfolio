@@ -1,122 +1,220 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/chase-clone-styles.css">
-        <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/project-pages.css">
-    </head>
-    <body>
-        <div class="container">
+
+<head>
+    <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/chase-clone-styles.css">
+    <link rel="stylesheet" href="projects-files/project-pages/project-pages-css/project-pages.css">
+</head>
+
+<body>
+    <div class="container">
         <div>
-            <div><h1>Chase Clone</h1></div>
+            <div>
+                <h1>Chase Clone</h1>
+            </div>
         </div>
- 
+
         <div class="sections">
-            <div><hr class="line"></div>
-            <div class="center-content"><img class="first-img" alt="Screenshot of Accounts page" src="{{chaseCloneCarousel[chaseCarouselCount].image}}"><button class="carousel-button" ng-click="toggleChaseCarousel()"><span class="material-symbols-outlined">arrow_forward_ios</span></button></div>
-            <div class="center-content"><h2 class="image-titles">{{   chaseCloneCarousel[chaseCarouselCount].title  }}</h2></div>
-            <div class="center-content"><p class="captions">{{ chaseCloneCarousel[chaseCarouselCount].caption }}</p></div>
-            <div><hr class="line"></div>
+            <div>
+                <hr class="line">
+            </div>
+            <div class="center-content"><img class="first-img" alt="Screenshot of Accounts page"
+                    src="{{chaseCloneCarousel[chaseCarouselCount].image}}"><button class="carousel-button"
+                    ng-click="toggleChaseCarousel()"><span
+                        class="material-symbols-outlined">arrow_forward_ios</span></button></div>
+            <div class="center-content">
+                <h2 class="image-titles">{{ chaseCloneCarousel[chaseCarouselCount].title }}</h2>
+            </div>
+            <div class="center-content">
+                <p class="captions">{{ chaseCloneCarousel[chaseCarouselCount].caption }}</p>
+            </div>
+            <div>
+                <hr class="line">
+            </div>
         </div>
 
         <div class="links-div">
-            <div class="center-content"><a class="project-links" href="https://github.com/ChaseClone/CCUI" target="_blank">Github Repository</a></div>
-            <div class="galaga-ship-file"  ng-include="'./home-files/animations/galaga-ship.html'"></div>
-            <div class="center-content" ><a class="project-links" href="https://ccui.onrender.com" target="_blank">Deployed App</a></div>
-            </div>
+            <div class="center-content"><a class="project-links" href="https://github.com/ChaseClone/CCUI"
+                    target="_blank">Github Repository</a></div>
+            <div class="galaga-ship-file" ng-include="'./home-files/animations/galaga-ship.html'"></div>
+            <div class="center-content"><a class="project-links" href="https://ccui.onrender.com"
+                    target="_blank">Deployed App</a></div>
+        </div>
         <div>
 
-        <div class="sections">
-            <div><hr class="line"></div>
-            <div class="center-content"><h2 class="sections-titles">Tech:</h2></div>
-            <div class="center-content">
-            <ul class="tech-stack-list">
-                <li style="color: red">ANGULARJS</li>
-                <li style="color: violet">JASMINE</li>
-                <li style="color: #89CFF0">TAILWIND</li>
-                <li>GOOGLE MATERIAL ICONS</li>
-                <li>RENDER</li>
-            </ul>
+            <div class="sections">
+                <div>
+                    <hr class="line">
+                </div>
+                <div class="center-content">
+                    <h2 class="sections-titles">Tech:</h2>
+                </div>
+                <div class="center-content">
+                    <ul class="tech-stack-list">
+                        <li style="color: red">ANGULARJS</li>
+                        <li style="color: violet">JASMINE</li>
+                        <li style="color: #89CFF0">TAILWIND</li>
+                        <li>GOOGLE MATERIAL ICONS</li>
+                        <li>RENDER</li>
+                    </ul>
+                </div>
+                <div>
+                    <hr class="line">
+                </div>
             </div>
-            <div><hr class="line"></div>
-        </div>
 
 
 
-<div class="sections">
-    <div><hr class="line"></div>
-    <div class="center-content"><h3 class="sections-titles">Objective</h3></div>
-    <div class="center-content"><p class="objectives-descriptions">This is a frontend project for Multiverse. The objective
-        was to create a frontend project with components. We had to pick a project related to finance.
-    </p></div>
-    <div class="center-content"><p class="criteria-heading">Criteria:</p></div>
-    <ol class="criteria-list">
-        <li class="criteria-list-items"><span class="bold-text">Application MVP:</span> Fetch a list of things and display them nicely</li>
-        <li class="criteria-list-items"><span class="bold-text">Client Side Routing:</span> Implement routing access to different pages in the appication </li>
-        <li class="criteria-list-items"><span class="bold-text">Dynamic Routes:</span> Add nested routes using query params and render a Show page about the specific thing.</li>
-        <li class="criteria-list-items"><span class="bold-text">Global State and Search/Filter:</span> Store some data globally in state and share it between mulitple components</li>
-        <li class="criteria-list-items"><span class="bold-text">Navigation:</span> An app wide Nav bar to connect routes</li>
-        <li class="criteria-list-items"><span class="bold-text">Unit Tests:</span> Implement unit tests for components</li>
-        <li class="criteria-list-items"><span class="bold-text">Accessibility:</span> Using Lighthouse feature of Chrome-based browsers, verify Accessibility is in the Green.</li>
-    </ol>
-    <div><hr class="line"></div>
-</div>
+            <div class="sections">
+                <div>
+                    <hr class="line">
+                </div>
+                <div class="center-content">
+                    <h3 class="sections-titles">Objective</h3>
+                </div>
+                <div class="center-content">
+                    <p class="objectives-descriptions">This is a frontend project for Multiverse. The objective
+                        was to create a frontend project with components. We had to pick a project related to finance.
+                    </p>
+                </div>
+                <div class="center-content">
+                    <p class="criteria-heading">Criteria:</p>
+                </div>
+                <ol class="criteria-list">
+                    <li class="criteria-list-items"><span class="bold-text">Application MVP:</span> Fetch a list of
+                        things and display them nicely</li>
+                    <li class="criteria-list-items"><span class="bold-text">Client Side Routing:</span> Implement
+                        routing access to different pages in the appication </li>
+                    <li class="criteria-list-items"><span class="bold-text">Dynamic Routes:</span> Add nested routes
+                        using query params and render a Show page about the specific thing.</li>
+                    <li class="criteria-list-items"><span class="bold-text">Global State and Search/Filter:</span> Store
+                        some data globally in state and share it between mulitple components</li>
+                    <li class="criteria-list-items"><span class="bold-text">Navigation:</span> An app wide Nav bar to
+                        connect routes</li>
+                    <li class="criteria-list-items"><span class="bold-text">Unit Tests:</span> Implement unit tests for
+                        components</li>
+                    <li class="criteria-list-items"><span class="bold-text">Accessibility:</span> Using Lighthouse
+                        feature of Chrome-based browsers, verify Accessibility is in the Green.</li>
+                </ol>
+                <div>
+                    <hr class="line">
+                </div>
+            </div>
 
-<div class="approach-div sections">
-    <div><hr class="line"></div>
-    <div>
-    <div class="center-content"><h4 class="sections-titles">Approach</h4></div>
-    <div class="center-content"><p class="approach-desc">I worked on this project with another apprentice that is on the same 
-                team as me, so we both use AngularJS regularly. We split the work up by pages. 
-                We tried to recreate the Chase website exactly, so we used Chrome DevTools to check the values of the colors on the real Chase website. For the icons we used Google Material Icons. I made arrays in the 
-                controller that had sample data that we could use for the components that are personalized for the user.</p></div>
+            <div class="approach-div sections">
+                <div>
+                    <hr class="line">
+                </div>
+                <div>
+                    <div class="center-content">
+                        <h4 class="sections-titles">Approach</h4>
+                    </div>
+                    <div class="center-content">
+                        <p class="approach-desc">I worked on this project with another apprentice that is on the same
+                            team as me, so we both use AngularJS regularly. We split the work up by pages.
+                            We tried to recreate the Chase website exactly, so we used Chrome DevTools to check the
+                            values of the colors on the real Chase website. For the icons we used Google Material Icons.
+                            I made arrays in the
+                            controller that had sample data that we could use for the components that are personalized
+                            for the user.</p>
+                    </div>
                 </div>
 
                 <div>
-                    <div class="center-content"><h5 class="approach-subheadings">Steps Taken</h5></div>
-                    <div class="center-content"><p class="steps-desc">This project took us 2.5 months to finish. The first thing we did in this project was look at the actual Chase bank website to see which features we wanted to recreate. We agreed
-                        that it would take way too much time to try to recreate everything, so we picked the main pages that are in the nav bar to work on and we didn't do any of the nested links. We divided the work evenly, so we both had two
-                        pages to start with. For obvious reasons, we did not create wireframes for this project, but I did spend a good amount of 
-                        time writing down all the hexcodes for the colors we needed to use and figuring out how to create the icons I couldn't find online. I started with the Accounts page and then all the other pages after 
-                        that were easy because all the styling is consistent throughout the pages we picked. For the search function, I created an array of links to different parts of the website. A user can search and the links come up in a list.
-                    </p></div>
+                    <div class="center-content">
+                        <h5 class="approach-subheadings">Steps Taken</h5>
+                    </div>
+                    <div class="center-content">
+                        <p class="steps-desc">This project took us 2.5 months to finish. The first thing we did in this
+                            project was look at the actual Chase bank website to see which features we wanted to
+                            recreate. We agreed
+                            that it would take way too much time to try to recreate everything, so we picked the main
+                            pages that are in the nav bar to work on and we didn't do any of the nested links. We
+                            divided the work evenly, so we both had two
+                            pages to start with. For obvious reasons, we did not create wireframes for this project, but
+                            I did spend a good amount of
+                            time writing down all the hexcodes for the colors we needed to use and figuring out how to
+                            create the icons I couldn't find online. I started with the Accounts page and then all the
+                            other pages after
+                            that were easy because all the styling is consistent throughout the pages we picked. For the
+                            search function, I created an array of links to different parts of the website. A user can
+                            search and the links come up in a list.
+                        </p>
+                    </div>
                 </div>
 
                 <div>
-                    <div class="center-content"><h5 class="approach-subheadings">Challenges</h5></div>
-                    <div class="center-content"><p class="challenges-desc">Something that was challenging about this project was keeping everything uniform. 
-                        It was easy to divide the work up because there was only me and one other person working on this, but we didn't talk about stuff like the icons before 
-                        before we started, so at one point our project had the same icons that looked similar, but were just slightly off and it looked weird.
-                        Another blocker we had was the styling, particularly the margins. CSS is like a puzzle, and being that we couldn't work on this together every single time, we had to debug the CSS often. 
-                        I had a lot of issues getting the body of each page to line up with the nav bar. 
-                    </p></div>
+                    <div class="center-content">
+                        <h5 class="approach-subheadings">Challenges</h5>
+                    </div>
+                    <div class="center-content">
+                        <p class="challenges-desc">Something that was challenging about this project was keeping
+                            everything uniform.
+                            It was easy to divide the work up because there was only me and one other person working on
+                            this, but we didn't talk about stuff like the icons before
+                            before we started, so at one point our project had the same icons that looked similar, but
+                            were just slightly off and it looked weird.
+                            Another blocker we had was the styling, particularly the margins. CSS is like a puzzle, and
+                            being that we couldn't work on this together every single time, we had to debug the CSS
+                            often.
+                            I had a lot of issues getting the body of each page to line up with the nav bar.
+                        </p>
+                    </div>
                 </div>
-                <div><hr class="line"></div>
-</div>
+                <div>
+                    <hr class="line">
+                </div>
+            </div>
 
-<div class="sections">
-    <div><hr class="line"></div>
-    <div class="center-content"><h5 class="approach-subheadings">Summary</h5></div>
-    <div class="center-content"><p class="summary-desc">
-        I had a lot of fun doing this project with one of the other apprentices. I really like doing CSS, and working on this project taught me a lot and I think my CSS skills generally improved.
-        To recreate the Chase website I had to use CSS properties that I had used before. I hadn't had a lot of experience 
-        using the position property, z-index, or transform. I had to use the z-index and transform to make the popup for the search bar. 
-    </p></div>
-    <div><hr class="line"></div>
-    </div>
+            <div class="sections">
+                <div>
+                    <hr class="line">
+                </div>
+                <div class="center-content">
+                    <h5 class="approach-subheadings">Summary</h5>
+                </div>
+                <div class="center-content">
+                    <p class="summary-desc">
+                        I had a lot of fun doing this project with one of the other apprentices. I really like doing
+                        CSS, and working on this project taught me a lot and I think my CSS skills generally improved.
+                        To recreate the Chase website I had to use CSS properties that I had used before. I hadn't had a
+                        lot of experience
+                        using the position property, z-index, or transform. I had to use the z-index and transform to
+                        make the popup for the search bar.
+                    </p>
+                </div>
+                <div>
+                    <hr class="line">
+                </div>
+            </div>
 
-    <div class="sections">
-        <div><hr class="line"></div>
-        <div class="center-content"><h6 class="approach-subheadings">Quantitive Impact</h6></div>
-        <div class="center-content"><p class="summary-desc" style="color: violet">
-            This project serves as compelling evidence for my headline statement as it underscores my collaborative effort and dedication to enhancing 
-            software usability and functionality. Working alongside another apprentice, we utilized Chrome DevTools to ensure accuracy in color values 
-            and integrating Google Material Icons for consistent design elements, to showcase our attention to detail and commitment to delivering high quality solutions.
-            Moreover, the division of work by pages facilitated efficient progress, highlighting our ability to manage project scope and collaborate towards a common goal. Through 
-            this project we demonstrated not only technical proficiency, but also dedication to continuous improvement and excellence in software development. 
-        </p></div>
-        <div><hr class="line"></div>
-    </div>
+            <div class="sections">
+                <div>
+                    <hr class="line">
+                </div>
+                <div class="center-content">
+                    <h6 class="approach-subheadings">Quantitive Impact</h6>
+                </div>
+                <div class="center-content">
+                    <p class="summary-desc" style="color: violet">
+                        This project serves as compelling evidence for my headline statement as it underscores my
+                        collaborative effort and dedication to enhancing
+                        software usability and functionality. Working alongside another apprentice, we utilized Chrome
+                        DevTools to ensure accuracy in color values
+                        and integrating Google Material Icons for consistent design elements, to showcase our attention
+                        to detail and commitment to delivering high quality solutions.
+                        Moreover, the division of work by pages facilitated efficient progress, highlighting our ability
+                        to manage project scope and collaborate towards a common goal. Through
+                        this project we demonstrated not only technical proficiency, but also dedication to continuous
+                        improvement and excellence in software development.
+                    </p>
+                </div>
+                <div>
+                    <hr class="line">
+                </div>
+            </div>
 
         </div>
-    </body>
+</body>
+
 </html>

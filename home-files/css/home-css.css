@@ -2,6 +2,7 @@
     font-family: 'VT323';
     src: url('VT323/VT323-Regular.ttf') format('truetype');
 }
+
 .name {
     font-size: 300%;
     font-family: 'VT323';
@@ -34,13 +35,13 @@ body {
 #desc {
     line-height: 2;
     font-size: 120%;
-    
+
 }
 
 #title-test {
     display: flex;
     flex-direction: row;
-   
+
 }
 
 #galaga-ship-file {
@@ -70,12 +71,12 @@ body {
 
 /* flex box */
 #level-one-parent {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-flex-wrap: wrap;
-margin-left: 5%;
-margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
 
 
 
@@ -90,7 +91,7 @@ margin-right: 5%;
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.1);
     padding-left: 2%;
     padding-right: 2%;
-   
+
 }
 
 #level-one-child-left {
@@ -115,13 +116,14 @@ margin-right: 5%;
 
 .link {
     text-decoration: none;
-    
+
 }
 
 .indent-1 {
     margin-left: 2%;
     width: 100%;
 }
+
 .indent-2 {
     margin-left: 4%;
 }
@@ -132,17 +134,19 @@ margin-right: 5%;
     .name {
         font-size: 150%;
     }
-    
+
     .greeting-name {
         line-height: 0.5;
     }
+
     #level-one-child-left {
         margin-top: 5%;
         width: 100%;
         margin-bottom: 5%;
         padding-bottom: 10%;
-        
-       }
+
+    }
+
     #contact-button {
         margin-bottom: 5%;
     }
@@ -150,36 +154,36 @@ margin-right: 5%;
     #child-one-left {
         width: 100%;
     }
+
     #level-one-child-right {
-       width: 100%;
-       margin-top: 3%;
+        width: 100%;
+        margin-top: 3%;
     }
-   
+
 }
 
 @media (max-width: 576px) {
-    
+
 
     .name {
         font-size: 150%;
     }
-    
+
     .greeting-name {
         line-height: 0.5;
     }
+
     #level-one-child-left {
         margin-top: 5%;
         width: 100%;
         margin-bottom: 5%;
-       padding-bottom: 10%;
-        
+        padding-bottom: 10%;
+
     }
-    
+
     #level-one-parent {
         margin-bottom: 20%;
     }
 
 
 }
-
-
